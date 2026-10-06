@@ -1,37 +1,27 @@
 # IACR Cryptology Schools
 
-A modern, static redesign of the IACR Cryptology Schools website, built for GitHub Pages.
+Static redesign of the IACR Cryptology Schools website.
 
-## Pages
+## Site
 
-- `index.html` — program overview and searchable archive
-- `propose.html` — proposal checklist, submission cycle and current Schools Committee
-- `schools.json` — historical school records
-- `styles.css` — responsive visual system
-- `app.js` — search/filter rendering
-- `MEDIA_SOURCES.md` — image provenance and permission notes
-- `.github/workflows/pages.yml` — Pages deployment
+- `index.html` contains the overview, upcoming schools and archive
+- `propose.html` contains the proposal guide and Schools Committee
+- `schools.json` contains the school records
+- `MEDIA_SOURCES.md` records image sources and reuse status
+- `.github/workflows/pages.yml` deploys the site with GitHub Pages
 
-## Current Schools Committee
+## Schools Committee
 
 - Eysa Lee
 - Julian Henry Loss
 - Anna Lysyanskaya
-- Francisco Rodríguez-Henríquez — Chair
+- Francisco Rodríguez-Henríquez, Chair
 - Mehdi Tibouchi
 
 Francisco's committee card links to https://franciscorh.org/.
 
-## Editorial notes
+## Images
 
-The source IACR schools page currently contains a duplicated 2022 CROSSING school entry; this archive keeps one copy.
+Use event photographs before venue photographs when possible. Store an image in the repository only when its reuse rights are clear. Keep the source, creator, license and alt text with the record.
 
-Historical school photographs are intentionally added gradually. Photos should only be copied into the repository after their creator/source and reuse permission are recorded in `MEDIA_SOURCES.md`.
-
-## Local preview
-
-```bash
-python -m http.server 8000
-```
-
-Then visit http://localhost:8000/.
+The committee portraits remain remote references until reuse permission is confirmed.
