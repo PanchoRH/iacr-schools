@@ -1,39 +1,99 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="IACR Cryptology Schools — intensive training in cryptology for graduate students, researchers and professionals.">
-<title>IACR Cryptology Schools</title><link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="IACR Cryptology Schools">
+<title>IACR Cryptology Schools</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header"><div class="container nav">
-<a class="brand" href="index.html"><span class="brand-mark">λ</span><span>IACR Cryptology Schools</span></a>
-<nav class="nav-links" aria-label="Primary"><a href="#about">About</a><a href="#archive">Archive</a><a class="button primary" href="propose.html">Propose a school</a></nav>
-</div></header>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><span class="brand-mark">λ</span><span>IACR Cryptology Schools</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#upcoming">Upcoming</a>
+      <a href="#archive">Archive</a>
+      <a class="button primary" href="propose.html">Propose a school</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-<section class="hero"><div class="container">
-<span class="eyebrow">International Association for Cryptologic Research</span>
-<h1>Intensive learning. Global cryptology community.</h1>
-<p>Since 2014, IACR has supported focused schools that bring students and researchers together with domain experts for several days of deep, accessible learning in cryptology.</p>
-<div class="hero-actions"><a class="button primary" href="#archive">Explore past schools</a><a class="button secondary" href="propose.html">Propose a new school</a></div>
-<div class="metrics"><div class="metric"><strong id="schoolCount">—</strong><span>unique schools in this archive</span></div><div class="metric"><strong>2014–2025</strong><span>currently listed years</span></div><div class="metric"><strong>4–5 days</strong><span>typical intensive format</span></div></div>
-</div></section>
-<section class="section white" id="about"><div class="container">
-<div class="section-head"><div><span class="eyebrow">About the program</span><h2>Designed for learning, not just presenting.</h2></div><p>A Cryptology School is typically full-time and open to qualified participants, with a small number of experts focused on teaching rather than showcasing results.</p></div>
-<div class="feature-grid">
-<div class="feature"><b>Focused topics</b><p>Each school develops depth around a clearly identified topic in cryptology and related fields.</p></div>
-<div class="feature"><b>Expert-led teaching</b><p>Lectures, tutorials and discussion emphasize understanding, durable skills and research capacity.</p></div>
-<div class="feature"><b>International reach</b><p>The program strengthens local research communities and connects participants with the wider IACR ecosystem.</p></div>
-</div></div></section>
-<section class="section" id="archive"><div class="container">
-<div class="section-head"><div><span class="eyebrow">Archive</span><h2>Schools through the years</h2></div><p>Search the historical archive and follow each card to the original school website. Photographs are added only when their source and reuse status are recorded.</p></div>
-<div class="toolbar"><input id="search" class="input" type="search" placeholder="Search topic, city, country or year…" aria-label="Search schools"><select id="yearFilter" class="select" aria-label="Filter by year"><option value="">All years</option></select><select id="countryFilter" class="select" aria-label="Filter by country"><option value="">All countries</option></select></div>
-<p class="meta" id="resultCount" aria-live="polite"></p><div class="school-grid" id="schoolGrid"></div>
-</div></section>
-<section class="section white"><div class="container"><div class="callout">
-<div><span class="eyebrow" style="color:#8fe0db">Organize a school</span><h2 style="margin:.35rem 0 0">Have a topic that deserves a week of concentrated attention?</h2><p>Review the proposal requirements, funding model, deadlines and evaluation criteria.</p></div><a class="button" href="propose.html">Proposal guide →</a>
-</div></div></section>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">International Association for Cryptologic Research</span>
+      <h1>IACR Cryptology Schools</h1>
+      <p>IACR supports intensive schools on focused topics in cryptology. The schools serve graduate students, researchers and professionals.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#upcoming">Upcoming schools</a>
+        <a class="button secondary" href="propose.html">Proposal information</a>
+      </div>
+    </div>
+    <div class="hero-panel" aria-hidden="true">
+      <div class="cipher-grid"></div>
+      <div class="hero-panel-label">Cryptology · Education · Research</div>
+    </div>
+  </div>
+</section>
+
+<section class="section white" id="upcoming">
+  <div class="container">
+    <div class="section-head compact-head">
+      <div><span class="eyebrow">Upcoming</span><h2>Next school</h2></div>
+    </div>
+    <div class="school-grid featured-grid" id="upcomingGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow">Program</span><h2>Intensive training in cryptology</h2></div>
+      <p>Schools usually run for several full days. A small group of experts teaches a focused topic with learning as the main goal.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature"><b>Focused</b><p>Each school develops one topic in depth.</p></div>
+      <div class="feature"><b>Open</b><p>Qualified students, researchers and professionals may attend.</p></div>
+      <div class="feature"><b>Research-oriented</b><p>The program builds skills and research capacity.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section white" id="archive">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow">Archive</span><h2>Supported schools</h2></div>
+      <p>Each entry links to the school website. We add photographs only when the source and reuse rights are clear.</p>
+    </div>
+
+    <div class="toolbar">
+      <input id="search" class="input" type="search" placeholder="Search topic, city, country or year" aria-label="Search schools">
+      <select id="yearFilter" class="select" aria-label="Filter by year"><option value="">All years</option></select>
+      <select id="countryFilter" class="select" aria-label="Filter by country"><option value="">All countries</option></select>
+    </div>
+    <p class="meta" id="resultCount" aria-live="polite"></p>
+    <div class="school-grid" id="schoolGrid"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="callout">
+      <div><span class="eyebrow light">Organize a school</span><h2>Propose an IACR Cryptology School</h2><p>Review the proposal format, deadlines and evaluation criteria.</p></div>
+      <a class="button light-button" href="propose.html">Proposal guide</a>
+    </div>
+  </div>
+</section>
 </main>
-<footer class="footer"><div class="container footer-row"><span>IACR Cryptology Schools redesign prototype.</span><span><a class="small-link" href="https://www.iacr.org/" target="_blank" rel="noopener">IACR.org ↗</a></span></div></footer>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <span>IACR Cryptology Schools</span>
+    <a class="small-link" href="https://www.iacr.org/" target="_blank" rel="noopener">IACR.org ↗</a>
+  </div>
+</footer>
 <script src="app.js"></script>
-</body></html>
+</body>
+</html>
