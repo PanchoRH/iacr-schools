@@ -1,0 +1,281 @@
+[
+  {
+    "year": 2014,
+    "title": "School on Cryptographic Attacks",
+    "dates": "13–16 October 2014",
+    "city": "Porto",
+    "country": "Portugal",
+    "url": "https://attackschool.di.uminho.pt/"
+  },
+  {
+    "year": 2014,
+    "title": "The Fourth Asian Workshop on Symmetric Key Cryptography – Cryptology School (ASK 2014)",
+    "dates": "19–22 December 2014",
+    "city": "Chennai",
+    "country": "India",
+    "url": "https://ask2014.iiitd.ac.in/"
+  },
+  {
+    "year": 2015,
+    "title": "School on Computer-aided Cryptography",
+    "dates": "1–4 June 2015",
+    "city": "College Park",
+    "country": "USA",
+    "url": "https://www.easycrypt.info/trac/wiki/SchoolUMD2015"
+  },
+  {
+    "year": 2015,
+    "title": "SAC Summer School (S3)",
+    "dates": "10–12 August 2015",
+    "city": "Sackville",
+    "country": "Canada",
+    "url": "https://mta.ca/sac2015/s3.html"
+  },
+  {
+    "year": 2015,
+    "title": "Summer school of the 19th Workshop on Elliptic Curve Cryptography (ECC 2015)",
+    "dates": "23–25 September 2015",
+    "city": "Bordeaux",
+    "country": "France",
+    "url": "https://ecc2015.math.u-bordeaux1.fr/"
+  },
+  {
+    "year": 2015,
+    "title": "School on Design and Security of Cryptographic Algorithms and Devices",
+    "dates": "18–23 October 2015",
+    "city": "Sardinia",
+    "country": "Italy",
+    "url": "https://www.cosic.esat.kuleuven.be/summer_school_sardinia_2015/index.html"
+  },
+  {
+    "year": 2016,
+    "title": "Blockchain Technologies: from cryptographic e-cash to modern cryptocurrency",
+    "dates": "29 May–2 June 2016",
+    "city": "Corfu",
+    "country": "Greece",
+    "url": "https://www.bitcoinschool.gr/"
+  },
+  {
+    "year": 2016,
+    "title": "ECC2016 Computational Algebraic Number Theory School",
+    "dates": "1–7 September 2016",
+    "city": "İzmir",
+    "country": "Turkey",
+    "url": "https://ecc2016.yasar.edu.tr/school.html"
+  },
+  {
+    "year": 2016,
+    "title": "COST-IACR School on Randomness in Cryptography",
+    "dates": "14–18 November 2016",
+    "city": "Barcelona",
+    "country": "Spain",
+    "url": "https://eventum.upf.edu/5484/detail/cost-iacr-school-on-randomness-in-cryptography.html"
+  },
+  {
+    "year": 2016,
+    "title": "IACR-SEAMS School “Cryptography: Foundations and New Directions”",
+    "dates": "27 November–4 December 2016",
+    "city": "Hanoi",
+    "country": "Vietnam",
+    "url": "https://viasm.edu.vn/en/hdkh/cryptoschool2016"
+  },
+  {
+    "year": 2017,
+    "title": "IACR Cryptology School on Security & Correctness in the Internet of Things",
+    "dates": "8–12 May 2017",
+    "city": "Graz",
+    "country": "Austria",
+    "url": "https://springschool.iaik.tugraz.at/"
+  },
+  {
+    "year": 2017,
+    "title": "Advanced School on Cryptology and Information Security in Latin America (ASCrypto 2017)",
+    "dates": "17–19 September 2017",
+    "city": "La Habana",
+    "country": "Cuba",
+    "url": "https://latincrypt2017.cs.cinvestav.mx/content/ascrypto-2017"
+  },
+  {
+    "year": 2018,
+    "title": "IISc-IACR School on Information-theoretic Cryptography",
+    "dates": "4–8 January 2018",
+    "city": "Bangalore",
+    "country": "India",
+    "url": "https://www.csa.iisc.ac.in/~crysp/IACRSchool/"
+  },
+  {
+    "year": 2018,
+    "title": "Symmetric Proof Techniques",
+    "dates": "29 July–3 August 2018",
+    "city": "Bertinoro",
+    "country": "Italy",
+    "url": "https://spotniq.wordpress.com/"
+  },
+  {
+    "year": 2018,
+    "title": "ECI-IACR School on Modern Cryptography (ECI-IACR ’18)",
+    "dates": "30 July–3 August 2018",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "url": "https://www.dc.uba.ar/eci/2018/crypto/"
+  },
+  {
+    "year": 2018,
+    "title": "The 1st Crypto Innovation School (CIS 2018)",
+    "dates": "29 November–1 December 2018",
+    "city": "Shenzhen",
+    "country": "China",
+    "url": "https://crypto.sjtu.edu.cn/cis2018/"
+  },
+  {
+    "year": 2019,
+    "title": "Euclidean lattices: theory and applications",
+    "dates": "15–19 July 2019",
+    "city": "Kaliningrad",
+    "country": "Russia",
+    "url": "https://summerschool-kld.com/"
+  },
+  {
+    "year": 2019,
+    "title": "The 2nd Crypto Innovation School (CIS 2019)",
+    "dates": "13–15 December 2019",
+    "city": "Shanghai",
+    "country": "China",
+    "url": "https://crypto.sjtu.edu.cn/cis2019/"
+  },
+  {
+    "year": 2020,
+    "title": "Summer School on Theory and Practice of Multi-Party Computation",
+    "dates": "18–22 May 2020",
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "url": "https://events.au.dk/mpcschool2020/"
+  },
+  {
+    "year": 2022,
+    "title": "IACR-CROSSING School on Combinatorial Techniques in Cryptography",
+    "dates": "25–29 April 2022",
+    "city": "Valletta",
+    "country": "Malta",
+    "url": "https://www.crossing.tu-darmstadt.de/news_events/schools/2022_school/index.en.jsp"
+  },
+  {
+    "year": 2022,
+    "title": "Academia Sinica/CCoE/IACR Post-Quantum Cryptography Mini-School (PQC Mini-School 2022)",
+    "dates": "12–15 July 2022",
+    "city": "Taipei",
+    "country": "Taiwan",
+    "url": "https://troll.iis.sinica.edu.tw/school22/"
+  },
+  {
+    "year": 2022,
+    "title": "Summer School in Post-Quantum Cryptography",
+    "dates": "1–5 August 2022",
+    "city": "Budapest",
+    "country": "Hungary",
+    "url": "https://pqcsummerschool2022.inf.elte.hu/"
+  },
+  {
+    "year": 2022,
+    "title": "Summer School on Privacy-Preserving Machine Learning",
+    "dates": "1–4 August 2022",
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "url": "https://www.conferencemanager.dk/ppml2022/"
+  },
+  {
+    "year": 2022,
+    "title": "IACR-VIASM Summer School on Cryptography",
+    "dates": "24–30 August 2022",
+    "city": "Hanoi",
+    "country": "Vietnam",
+    "url": "https://viasm.edu.vn/en/hdkh/iacr-viasm-summer-school-cryptography-2022"
+  },
+  {
+    "year": 2022,
+    "title": "Graz Security Week 2022 – Summer School on Security, Privacy and Correctness",
+    "dates": "26–30 September 2022",
+    "city": "Graz",
+    "country": "Austria",
+    "url": "https://securityweek.at/2022/"
+  },
+  {
+    "year": 2023,
+    "title": "School on Applied Cryptography",
+    "dates": "30 January–3 February 2023",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "url": "https://sites.google.com/view/iacrschoolbkk2023"
+  },
+  {
+    "year": 2023,
+    "title": "The Second IACR School on Privacy-Preserving Machine Learning 2023 (PPML’23)",
+    "dates": "31 July–3 August 2023",
+    "city": "Warsaw",
+    "country": "Poland",
+    "url": "https://ideas-ncbr.pl/en/events/ppml23/"
+  },
+  {
+    "year": 2023,
+    "title": "Graz Security Week – Summer School on Security and Correctness (GSW 2023)",
+    "dates": "4–8 September 2023",
+    "city": "Graz",
+    "country": "Austria",
+    "url": "https://securityweek.at/2023/"
+  },
+  {
+    "year": 2023,
+    "title": "Advanced School on Cryptology and Information Security in Latin America 2023 (ASCrypto)",
+    "dates": "2–3 October 2023",
+    "city": "Sangolquí",
+    "country": "Ecuador",
+    "url": "https://ascrypto.org/"
+  },
+  {
+    "year": 2024,
+    "title": "Warsaw IACR Summer School on Post-Quantum Cryptography",
+    "dates": "14–19 July 2024",
+    "city": "Warsaw",
+    "country": "Poland",
+    "url": "https://ideas-ncbr.pl/en/events/pqc2024/",
+    "image": "https://ideas-ncbr.pl/wp-content/uploads/2024/05/image-1024x679.png",
+    "imageAlt": "Old Library building at the University of Warsaw, venue of the 2024 IACR Summer School on Post-Quantum Cryptography",
+    "imageCredit": "Adrian Grycuk / Wikimedia Commons",
+    "imageLicense": "CC BY-SA 3.0 PL"
+  },
+  {
+    "year": 2024,
+    "title": "Foundations and Applications of Zero-Knowledge Proofs (ICMS ZKP Workshop)",
+    "dates": "2–6 September 2024",
+    "city": "Edinburgh",
+    "country": "United Kingdom",
+    "url": "https://www.icms.org.uk/workshops/2024/foundations-and-applications-zero-knowledge-proofs"
+  },
+  {
+    "year": 2024,
+    "title": "Graz Security Week 2024 – Summer School on Security, Privacy and Correctness",
+    "dates": "23–27 September 2024",
+    "city": "Graz",
+    "country": "Austria",
+    "url": "https://securityweek.at/2024/"
+  },
+  {
+    "year": 2025,
+    "title": "Spring School on Symmetric Cryptography 2025",
+    "dates": "10–14 March 2025",
+    "city": "Rome",
+    "country": "Italy",
+    "url": "https://casa.rub.de/en/spring-school-on-symmetric-cryptography",
+    "image": "https://cst.qd.sdu.edu.cn/__local/E/D4/11/5238684C7138DE9B8839C8E7D78_9A386DF2_7E518.jpg",
+    "imageAlt": "Participants at the Spring School on Symmetric Cryptography 2025 in Rome",
+    "imageCredit": "Shandong University — reuse permission to verify"
+  },
+  {
+    "year": 2025,
+    "title": "Graz Security Week 2025 – Summer School on Security, Privacy and Correctness",
+    "dates": "1–5 September 2025",
+    "city": "Graz",
+    "country": "Austria",
+    "url": "https://securityweek.at/2025/"
+  }
+]
