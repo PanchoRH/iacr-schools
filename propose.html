@@ -14,7 +14,7 @@
     <nav class="nav-links" aria-label="Primary">
       <a href="index.html#upcoming">Upcoming</a>
       <a href="#committee">Committee</a>
-      <a class="button primary" href="#requirements">Proposal guide</a>
+      <a class="button primary" href="#proposal-form">Submit a proposal</a>
     </nav>
   </div>
 </header>
@@ -70,6 +70,129 @@
   </div>
 </section>
 
+
+<section class="section proposal-form-section" id="proposal-form">
+  <div class="container form-shell">
+    <div class="form-intro">
+      <span class="eyebrow">Online proposal</span>
+      <h2 class="section-title">Submit a proposal</h2>
+      <p>Complete the form below. Your browser saves a local draft automatically.</p>
+      <div class="form-status" id="draftStatus" aria-live="polite">Draft not saved yet.</div>
+    </div>
+
+    <form class="proposal-form" id="schoolProposalForm" novalidate data-endpoint="">
+      <fieldset class="form-card">
+        <legend>Organizer</legend>
+        <div class="form-grid two">
+          <label class="field">
+            <span>Name <em>*</em></span>
+            <input name="organizer_name" autocomplete="name" required>
+          </label>
+          <label class="field">
+            <span>Email <em>*</em></span>
+            <input name="organizer_email" type="email" autocomplete="email" required>
+          </label>
+        </div>
+        <label class="field">
+          <span>Affiliation <em>*</em></span>
+          <input name="organizer_affiliation" required>
+        </label>
+      </fieldset>
+
+      <fieldset class="form-card">
+        <legend>School</legend>
+        <label class="field">
+          <span>School name <em>*</em></span>
+          <input name="school_name" required>
+        </label>
+        <label class="field">
+          <span>Topic and relevance <em>*</em></span>
+          <textarea name="topic" rows="5" required placeholder="Describe the topic and its relevance to cryptology."></textarea>
+        </label>
+        <label class="field">
+          <span>Objectives and expected benefits <em>*</em></span>
+          <textarea name="objectives" rows="5" required placeholder="State the goals, prerequisites, expected benefits and teaching materials."></textarea>
+        </label>
+      </fieldset>
+
+      <fieldset class="form-card">
+        <legend>Dates and location</legend>
+        <div class="form-grid two">
+          <label class="field">
+            <span>Proposed start date <em>*</em></span>
+            <input name="start_date" type="date" required>
+          </label>
+          <label class="field">
+            <span>Proposed end date <em>*</em></span>
+            <input name="end_date" type="date" required>
+          </label>
+        </div>
+        <div class="form-grid two">
+          <label class="field">
+            <span>City <em>*</em></span>
+            <input name="city" required>
+          </label>
+          <label class="field">
+            <span>Country <em>*</em></span>
+            <input name="country" required>
+          </label>
+        </div>
+        <label class="field">
+          <span>Venue, travel, housing and accessibility <em>*</em></span>
+          <textarea name="logistics" rows="5" required></textarea>
+        </label>
+      </fieldset>
+
+      <fieldset class="form-card">
+        <legend>Participants and teaching</legend>
+        <label class="field">
+          <span>Estimated attendance <em>*</em></span>
+          <input name="attendance" type="number" min="1" step="1" required>
+        </label>
+        <label class="field">
+          <span>Speakers <em>*</em></span>
+          <textarea name="speakers" rows="6" required placeholder="List proposed speakers and note who has confirmed or soft-confirmed."></textarea>
+        </label>
+        <label class="field">
+          <span>Teaching format <em>*</em></span>
+          <textarea name="teaching_format" rows="5" required placeholder="Describe the schedule, lecture length and session format."></textarea>
+        </label>
+      </fieldset>
+
+      <fieldset class="form-card">
+        <legend>Budget</legend>
+        <label class="field">
+          <span>Requested IACR support <em>*</em></span>
+          <input name="iacr_support" inputmode="decimal" required placeholder="Amount and currency">
+        </label>
+        <label class="field">
+          <span>Budget and other funding <em>*</em></span>
+          <textarea name="budget" rows="7" required placeholder="Give the main cost items, other funding sources and responsibility for any deficit."></textarea>
+        </label>
+      </fieldset>
+
+      <fieldset class="form-card">
+        <legend>Additional information</legend>
+        <label class="field">
+          <span>Supporting links</span>
+          <textarea name="supporting_links" rows="3" placeholder="Optional links to a draft program, venue, organizers or supporting material."></textarea>
+        </label>
+        <label class="check-field">
+          <input name="confirmation" type="checkbox" required>
+          <span>I confirm that the information above is accurate and that the proposal follows the IACR Schools policy.</span>
+        </label>
+      </fieldset>
+
+      <div class="form-actions">
+        <button class="button secondary" type="button" id="saveDraft">Save draft</button>
+        <button class="button secondary" type="button" id="downloadDraft">Download draft</button>
+        <button class="button primary" type="submit" id="submitProposal">Submit proposal</button>
+      </div>
+      <p class="form-note" id="submissionNote">Online submission is not connected yet. The form is ready for local review.</p>
+    </form>
+  </div>
+</section>
+
 <section class="section white" id="committee">
   <div class="container">
     <div class="section-head">
@@ -112,5 +235,6 @@
     <a class="small-link" href="https://www.iacr.org/schools/propose.php" target="_blank" rel="noopener">Current IACR page ↗</a>
   </div>
 </footer>
+<script src="proposal-form.js"></script>
 </body>
 </html>
