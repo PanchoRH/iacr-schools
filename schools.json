@@ -329,14 +329,5 @@
     "country": "Vietnam",
     "url": "https://viasm.edu.vn/en/hdkh/IACR-VIASM-School-2026",
     "status": "past"
-  },
-  {
-    "year": 2026,
-    "title": "IACR Winter School on Lightweight Cryptography 2026",
-    "dates": "24–27 November 2026",
-    "city": "Islamabad",
-    "country": "Pakistan",
-    "url": "https://pakcrypt.org/pc26",
-    "status": "upcoming"
   }
 ]
