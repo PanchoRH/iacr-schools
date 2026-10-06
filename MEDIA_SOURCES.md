@@ -20,7 +20,7 @@ Before production, replace remote portraits with local files only after the righ
 
 ## School photographs
 
-### Homepage cover
+### Previous homepage cover
 
 - File: `assets/images/hero-school-audience.jpg`
 - Source: `WhatsApp Image 2026-10-04 at 18.04.06.jpeg` from `schools.zip`, supplied by Francisco Rodríguez-Henríquez on 6 October 2026 for this website.
@@ -104,3 +104,13 @@ Captures are made from the rendered source pages without changing their contents
 | Chennai, 2014 — The Fourth Asian Workshop on Symmetric Key Cryptography – Cryptology School (ASK 2014) | `assets/images/gallery/chennai-2014-28-website.jpg` | https://ask2014.iiitd.ac.in/ — ASK 2014 organizers |
 
 The MPC Summer School 2020 card retains its historical scheduled dates and adds the organizers’ notice that the school was postponed due to COVID-19. Its preview and destination show the affiliated-event notice on the official TPMPC 2020 page. The workshop itself took place online; it is not presented as the school.
+
+
+## Current homepage cover — Bertinoro 2018
+
+- Source page: https://spotniq.wordpress.com/ — Symmetric Proof Techniques, Bertinoro, 29 July–3 August 2018.
+- Remote image: https://spotniq.wordpress.com/wp-content/uploads/2018/08/img_0576.jpg?w=900
+- Credit: SPOTNIQ organizers; individual photographer and express reuse license not identified. The existing remote gallery image is reused as requested by the site owner. No local copy or open license is asserted.
+- The photograph is displayed at its original 3:2 aspect ratio without cropping the group. A linked caption identifies the school and source.
+- Alt text: Participants of the Symmetric Proof Techniques summer school gathered outside the venue in Bertinoro, Italy, in 2018.
+- The previous user-supplied audience photograph remains in the repository but is no longer the cover.

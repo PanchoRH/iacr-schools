@@ -36,7 +36,10 @@ a{color:inherit}
 .hero p{max-width:720px;margin:0;color:var(--muted);font-size:clamp(1.05rem,2vw,1.27rem)}
 .hero-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:28px}
 .hero-photo{margin:0;border-radius:30px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}
-.hero-photo img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:50% 65%}
+.hero-photo img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain}
+.hero-photo figcaption{padding:12px 18px;color:var(--muted);font-size:.75rem;line-height:1.5}
+.hero-photo figcaption a{text-decoration:none}
+.hero-photo figcaption a:hover{text-decoration:underline}
 .section{padding:70px 0}
 .section.white{background:#fff}
 .section-head{display:flex;justify-content:space-between;align-items:end;gap:36px;margin-bottom:28px}
