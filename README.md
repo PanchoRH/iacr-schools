@@ -6,6 +6,7 @@ Static redesign of the IACR Cryptology School website.
 
 - `index.html` contains the overview, upcoming schools and archive
 - `propose.html` contains the proposal guide
+- `submit-proposal.html` explains how to email a proposal and supporting attachments
 - `committee.html` contains the Schools Committee, portraits and profile links
 - `schools.json` contains the school records
 - `MEDIA_SOURCES.md` records image sources and reuse status
@@ -43,3 +44,7 @@ The committee portraits remain remote references until reuse permission is confi
 ## Branding
 
 Use the programme name “IACR Cryptology School”. The header and footer use the official IACR logo at 100px with the Association’s full name beside it. The proposal guide uses the full circular logo at 220px or larger. Logo links point to IACR; the programme name links to the site homepage. Hover motion respects reduced-motion preferences.
+
+## Proposal submission
+
+Applicants email their proposal PDF and supporting documents directly to `schools@iacr.org`. The proposal pages use `mailto:` links that open the applicant’s own email app with the recipient and subject filled in. Applicants attach their files and send the email themselves; the website does not upload or send documents. The address remains visible for people using webmail or without a configured email app. Large supporting files can be shared as accessible links. There is no external form-processing service or online submission confirmation.

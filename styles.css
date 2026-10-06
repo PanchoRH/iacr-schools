@@ -177,37 +177,9 @@ a{color:inherit}
 }
 
 
-/* Proposal form */
-.proposal-form-section{background:#eef2f6}
-.form-shell{width:min(860px,calc(100% - 36px));margin-inline:auto}
-.form-intro{margin-bottom:22px}
-.form-intro p{margin:10px 0 0;color:var(--muted)}
-.form-status{margin-top:12px;color:var(--muted);font-size:.88rem}
-.proposal-form{display:grid;gap:16px}
-.form-card{margin:0;padding:26px;background:#fff;border:1px solid var(--line);border-radius:18px}
-.form-card legend{padding:0 8px;font-weight:900;font-size:1.08rem}
-.form-grid{display:grid;gap:14px}
-.form-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
-.field{display:grid;gap:7px;margin-top:15px}
-.field:first-of-type{margin-top:8px}
-.field>span{font-size:.9rem;font-weight:800}
-.field em{color:#a23a3a;font-style:normal}
-.field input,.field textarea{width:100%;border:1px solid #cfd8e2;border-radius:10px;background:#fff;color:var(--ink);padding:12px 13px;font:inherit;outline:none}
-.field textarea{resize:vertical;min-height:110px}
-.field input:focus,.field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(47,111,163,.12)}
-.field input:invalid:not(:placeholder-shown),.field textarea:invalid:not(:placeholder-shown){border-color:#bd6a6a}
-.check-field{display:flex;gap:10px;align-items:flex-start;margin-top:12px;color:var(--muted);font-size:.92rem}
-.check-field input{margin-top:4px}
-.form-actions{display:flex;flex-wrap:wrap;gap:10px;padding-top:4px}
-.form-actions button{font:inherit}
-.form-note{margin:0;color:var(--muted);font-size:.9rem}
-.form-note.error{color:#9e2f2f}
-.form-note.success{color:#276b58}
-@media(max-width:640px){
-  .form-shell{width:min(100% - 24px,860px)}
-  .form-grid.two{grid-template-columns:1fr}
-  .form-card{padding:20px}
-}
+/* Proposal email instructions */
+.hero .email-help{margin-top:16px;font-size:.9rem;line-height:1.55}
+.email-checklist{max-width:860px}
 
 .school-note{margin:0 0 10px;color:var(--navy);font-size:.78rem;font-weight:650}
 

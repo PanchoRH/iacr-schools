@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Submit an IACR Cryptology School proposal">
+<meta name="description" content="Email an IACR Cryptology School proposal">
 <title>Submit an IACR Cryptology School Proposal</title>
 <link rel="icon" type="image/png" href="favicon.png">
-<link rel="stylesheet" href="styles.css?v=20261006-school-branding">
+<link rel="stylesheet" href="styles.css?v=20261007-direct-email">
 </head>
 <body>
 <header class="site-header">
@@ -26,140 +26,33 @@
 
 <main>
 <section class="hero proposal-hero">
-  <div class="container">
-    <span class="eyebrow">Online proposal</span>
-    <h1>Submit a Cryptology School proposal</h1>
-    <p>Complete the form below. You can save a local draft before submission.</p>
-    <div class="hero-actions">
-      <a class="button secondary" href="propose.html" target="_blank" rel="noopener noreferrer">Review proposal guide</a>
-      <a class="button secondary" href="https://www.iacr.org/docs/schools.pdf" target="_blank" rel="noopener noreferrer">Official policy ↗</a>
+  <div class="container proposal-hero-grid">
+    <div>
+      <span class="eyebrow">Submit by email</span>
+      <h1>Submit your school proposal</h1>
+      <p>Email your proposal PDF and supporting documents directly to the IACR Schools Committee at <a href="mailto:schools@iacr.org">schools@iacr.org</a>.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="mailto:schools@iacr.org?subject=IACR%20Cryptology%20School%20proposal">Email your proposal</a>
+        <a class="button secondary" href="propose.html">Review proposal guide</a>
+      </div>
+      <p class="email-help">The button opens your email app. Attach your files there before sending. If it does not open, write to schools@iacr.org using your usual email service.</p>
     </div>
+    <a class="proposal-emblem" href="https://www.iacr.org/" title="IACR logo">
+      <img src="assets/images/iacr-logo-full.png" width="500" height="500" alt="IACR logo">
+      <span>Discover IACR <span aria-hidden="true">↗</span></span>
+    </a>
   </div>
 </section>
 
-<section class="section proposal-form-section" id="proposal-form">
-<div class="container form-shell">
-    <div class="form-intro">
-      <span class="eyebrow">Online proposal</span>
-      <h2 class="section-title">Submit a proposal</h2>
-      <p>Complete the form below. Your browser saves a local draft automatically.</p>
-      <div class="form-status" id="draftStatus" aria-live="polite">Draft not saved yet.</div>
+<section class="section white">
+  <div class="container">
+    <span class="eyebrow">Before you send</span>
+    <h2 class="section-title">What to include</h2>
+    <div class="steps email-checklist">
+      <div class="step"><h3>Proposal PDF</h3><p>Follow the <a href="propose.html#requirements">proposal guide</a> and include the teaching plan, speakers, dates, location and detailed budget.</p></div>
+      <div class="step"><h3>Supporting documents</h3><p>Attach any additional material, such as a budget spreadsheet, draft programme or letters of support. For large files, include a link the committee can access.</p></div>
+      <div class="step"><h3>School name and contact details</h3><p>Include the school name in the email subject and the organizing team’s names, affiliations and contact details in your message.</p></div>
     </div>
-
-    <form class="proposal-form" id="schoolProposalForm" novalidate data-endpoint="">
-      <fieldset class="form-card">
-        <legend>Organizer</legend>
-        <div class="form-grid two">
-          <label class="field">
-            <span>Name <em>*</em></span>
-            <input name="organizer_name" autocomplete="name" required>
-          </label>
-          <label class="field">
-            <span>Email <em>*</em></span>
-            <input name="organizer_email" type="email" autocomplete="email" required>
-          </label>
-        </div>
-        <label class="field">
-          <span>Affiliation <em>*</em></span>
-          <input name="organizer_affiliation" required>
-        </label>
-      </fieldset>
-
-      <fieldset class="form-card">
-        <legend>School</legend>
-        <label class="field">
-          <span>School name <em>*</em></span>
-          <input name="school_name" required>
-        </label>
-        <label class="field">
-          <span>School website</span>
-          <input name="school_website" type="url" inputmode="url" autocomplete="url" placeholder="https://example.org/">
-        </label>
-        <label class="field">
-          <span>Topic and relevance <em>*</em></span>
-          <textarea name="topic" rows="5" required placeholder="Describe the topic and its relevance to cryptology."></textarea>
-        </label>
-        <label class="field">
-          <span>Objectives and expected benefits <em>*</em></span>
-          <textarea name="objectives" rows="5" required placeholder="State the goals, prerequisites, expected benefits and teaching materials."></textarea>
-        </label>
-      </fieldset>
-
-      <fieldset class="form-card">
-        <legend>Dates and location</legend>
-        <div class="form-grid two">
-          <label class="field">
-            <span>Proposed start date <em>*</em></span>
-            <input name="start_date" type="date" required>
-          </label>
-          <label class="field">
-            <span>Proposed end date <em>*</em></span>
-            <input name="end_date" type="date" required>
-          </label>
-        </div>
-        <div class="form-grid two">
-          <label class="field">
-            <span>City <em>*</em></span>
-            <input name="city" required>
-          </label>
-          <label class="field">
-            <span>Country <em>*</em></span>
-            <input name="country" required>
-          </label>
-        </div>
-        <label class="field">
-          <span>Venue, travel, housing and accessibility <em>*</em></span>
-          <textarea name="logistics" rows="5" required></textarea>
-        </label>
-      </fieldset>
-
-      <fieldset class="form-card">
-        <legend>Participants and teaching</legend>
-        <label class="field">
-          <span>Estimated attendance <em>*</em></span>
-          <input name="attendance" type="number" min="1" step="1" required>
-        </label>
-        <label class="field">
-          <span>Speakers <em>*</em></span>
-          <textarea name="speakers" rows="6" required placeholder="List proposed speakers and note who has confirmed or soft-confirmed."></textarea>
-        </label>
-        <label class="field">
-          <span>Teaching format <em>*</em></span>
-          <textarea name="teaching_format" rows="5" required placeholder="Describe the schedule, lecture length and session format."></textarea>
-        </label>
-      </fieldset>
-
-      <fieldset class="form-card">
-        <legend>Budget</legend>
-        <label class="field">
-          <span>Requested IACR support <em>*</em></span>
-          <input name="iacr_support" inputmode="decimal" required placeholder="Amount and currency">
-        </label>
-        <label class="field">
-          <span>Budget and other funding <em>*</em></span>
-          <textarea name="budget" rows="7" required placeholder="Give the main cost items, other funding sources and responsibility for any deficit."></textarea>
-        </label>
-      </fieldset>
-
-      <fieldset class="form-card">
-        <legend>Additional information</legend>
-        <label class="field">
-          <span>Supporting links</span>
-          <textarea name="supporting_links" rows="3" placeholder="Optional links to a draft program, venue, organizers or supporting material."></textarea>
-        </label>
-        <label class="check-field">
-          <input name="confirmation" type="checkbox" required>
-          <span>I confirm that the information above is accurate and that the proposal follows the IACR Schools policy.</span>
-        </label>
-      </fieldset>
-
-      <div class="form-actions">
-        <button class="button secondary" type="button" id="saveDraft">Save draft</button>
-        <button class="button secondary" type="button" id="downloadDraft">Download draft</button>
-        <button class="button primary" type="submit" id="submitProposal">Submit proposal</button>
-      </div>
-      <p class="form-note" id="submissionNote">Online submission is not connected yet. The form is ready for local review.</p>
-    </form>
   </div>
 </section>
 </main>
@@ -173,6 +66,5 @@
     <a class="small-link" href="propose.html" target="_blank" rel="noopener noreferrer">Proposal guide</a>
   </div>
 </footer>
-<script src="proposal-form.js"></script>
 </body>
 </html>
