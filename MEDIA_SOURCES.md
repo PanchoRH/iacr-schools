@@ -114,3 +114,11 @@ The MPC Summer School 2020 card retains its historical scheduled dates and adds 
 - The photograph is displayed at its original 3:2 aspect ratio without cropping the group. A linked caption identifies the school and source.
 - Alt text: Participants of the Symmetric Proof Techniques summer school gathered outside the venue in Bertinoro, Italy, in 2018.
 - The previous user-supplied audience photograph remains in the repository but is no longer the cover.
+
+
+## Official IACR logos
+
+- Source and usage guidance: https://www.iacr.org/forms/logo/
+- `assets/images/iacr-logo.png`: unchanged 500×500 PNG from https://www.iacr.org/img/logo/iacrlogo_small.png, used in the header and footer at 100×100px with the full Association name beside it.
+- `assets/images/iacr-logo-full.png`: unchanged 500×500 transparent PNG from https://www.iacr.org/img/logo/iacrlogo_trans.png, used on the near-white proposal hero at 220×220px or larger.
+- Added at the site owner’s request for the IACR programme website; no open license is asserted. Both versions link to https://www.iacr.org/ and have alt text “IACR logo”.

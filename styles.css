@@ -19,13 +19,22 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans
 a{color:inherit}
 .container{width:min(var(--max),calc(100% - 36px));margin-inline:auto}
 .site-header{position:sticky;top:0;z-index:40;background:rgba(243,245,247,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(220,226,232,.9)}
-.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:800;letter-spacing:-.02em}
+.nav{min-height:132px;padding-block:16px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:20px;min-width:0}
+.brand-copy{max-width:270px}
+.brand-name{display:block;color:var(--ink);font-size:1.12rem;font-weight:850;letter-spacing:-.025em;text-decoration:none;line-height:1.25}
+.brand-association{display:block;margin-top:8px;color:var(--muted);font-size:.68rem;line-height:1.5;letter-spacing:.045em}
+.logo-link{display:block;flex:0 0 100px;border-radius:50%;transition:transform .2s ease}
+.logo-link:hover,.logo-link:focus-visible{transform:translateY(-3px)}
+.logo-link:focus-visible,.brand-name:focus-visible,.proposal-emblem:focus-visible{outline:3px solid var(--blue);outline-offset:6px}
 .brand-mark{width:38px;height:38px;display:grid;place-items:center;border-radius:11px;background:var(--navy);color:#fff;font-weight:900}
-.brand-logo{width:38px;height:38px;display:block;object-fit:contain}
+.brand-logo{width:100px;height:100px;display:block;object-fit:contain}
 .nav-links{display:flex;align-items:center;gap:22px}
 .nav-links a{text-decoration:none;color:var(--muted);font-weight:700}
 .nav-links a:hover{color:var(--ink)}
+.nav-links .committee-link{color:var(--navy)}
+.nav-links a[aria-current="page"]{text-decoration:underline;text-underline-offset:7px;text-decoration-thickness:2px}
+.nav-links a:focus-visible,.person:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
 .button{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:11px 17px;text-decoration:none;font-weight:800;border:1px solid transparent}
 .button.primary{background:var(--navy);color:#fff}
 .button.secondary{background:#fff;border-color:var(--line)}
@@ -79,7 +88,7 @@ a{color:inherit}
 .photo-credit a{text-decoration:none}
 .photo-credit a:hover{text-decoration:underline}
 .school-media:focus-visible{outline:3px solid var(--blue);outline-offset:-3px}
-#archive{scroll-margin-top:72px}
+#archive,#upcoming,#committee{scroll-margin-top:150px}
 .card-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto}
 .visit{color:var(--blue);font-weight:800;text-decoration:none}
 .badge{padding:5px 8px;border-radius:999px;background:#eaf3f2;color:var(--teal);font-size:.72rem;font-weight:800}
@@ -94,6 +103,11 @@ a{color:inherit}
 .light-button{background:#fff;color:var(--navy)}
 .proposal-hero{padding-bottom:54px}
 .proposal-hero h1{max-width:900px}
+.proposal-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:70px;align-items:center}
+.proposal-hero-grid h1{font-size:clamp(2.8rem,5.5vw,4.6rem);line-height:1.02}
+.proposal-emblem{display:flex;flex-direction:column;align-items:center;gap:22px;padding:20px 0;text-decoration:none;color:var(--blue);font-size:.85rem;font-weight:750;border-radius:24px;transition:transform .2s ease}
+.proposal-emblem img{display:block;width:280px;height:280px;object-fit:contain}
+.proposal-emblem:hover,.proposal-emblem:focus-visible{transform:translateY(-5px)}
 .proposal-layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:32px}
 .steps{counter-reset:step;display:grid;gap:13px;margin-top:24px}
 .step{counter-increment:step;position:relative;background:#fff;border:1px solid var(--line);border-radius:17px;padding:20px 20px 20px 68px}
@@ -102,10 +116,13 @@ a{color:inherit}
 .step p{margin:0;color:var(--muted)}
 .evaluation{margin-top:42px}
 .evaluation .feature-grid{margin-top:20px}
-.sidebar-card{position:sticky;top:94px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:21px}
+.sidebar-card{position:sticky;top:154px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:21px}
 .deadline{padding:16px 0;border-bottom:1px solid var(--line)}
 .deadline strong{display:block}
 .deadline span{display:block;margin-top:3px;color:var(--muted);font-size:.88rem}
+.committee-intro{margin-bottom:34px}
+.committee-intro h1{margin:10px 0 0;font-size:clamp(2.5rem,5vw,3.8rem);line-height:1.05;letter-spacing:-.045em}
+.committee-page{min-height:calc(100vh - 310px)}
 .committee{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
 .person{overflow:hidden;background:var(--paper);border:1px solid var(--line);border-radius:18px;text-decoration:none;transition:transform .18s ease,box-shadow .18s ease}
 .person:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
@@ -117,14 +134,19 @@ a{color:inherit}
 .person-role{margin-top:4px;color:var(--blue);font-size:.83rem;font-weight:850}
 .person-affil{margin-top:5px;color:var(--muted);font-size:.82rem}
 .footer{padding:38px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
-.footer-row{display:flex;justify-content:space-between;gap:20px}
+.footer-row{display:flex;align-items:center;justify-content:space-between;gap:28px}
 .small-link{color:var(--blue);font-weight:750}
 @media(max-width:1000px){
   .hero-grid{grid-template-columns:1fr}
   .committee{grid-template-columns:repeat(3,1fr)}
 }
 @media(max-width:900px){
-  .nav-links a:not(.button){display:none}
+  .nav{min-height:132px;flex-wrap:wrap;gap:14px;padding-block:14px}
+  #archive,#upcoming,#committee{scroll-margin-top:195px}
+  .proposal-hero-grid{grid-template-columns:minmax(0,1fr) 230px;gap:32px}
+  .proposal-emblem img{width:220px;height:220px}
+  .nav-links{flex:1 0 100%;justify-content:space-between;gap:10px}
+  .nav-links a{font-size:.86rem;white-space:nowrap}
   .school-grid,.feature-grid{grid-template-columns:repeat(2,1fr)}
   .featured-grid{grid-template-columns:minmax(0,1fr)}
   .proposal-layout{grid-template-columns:1fr}
@@ -134,7 +156,19 @@ a{color:inherit}
 }
 @media(max-width:640px){
   .container{width:min(var(--max),calc(100% - 24px))}
-  .hero{padding:58px 0 52px}.hero h1{font-size:3.45rem}
+  .nav-long{display:none}
+  .brand{gap:16px}
+  .brand-copy{max-width:250px}
+  .brand-name{font-size:1.1rem}
+  .brand-association{font-size:.62rem;letter-spacing:.02em}
+  .proposal-hero-grid{grid-template-columns:1fr;gap:28px}
+  .proposal-hero-grid h1{font-size:clamp(2.6rem,10vw,3.45rem)}
+  .proposal-emblem{justify-self:center;padding:12px 0}
+  .footer-row .small-link{display:inline-block;margin-top:24px}
+  .nav-links{gap:8px}
+  .nav-links a{font-size:.76rem}
+  .nav-links .button{padding:10px 12px}
+  .hero{padding:58px 0 52px}.hero h1{font-size:clamp(2.6rem,10vw,3.45rem)}
   .section{padding:54px 0}
   .section-head,.footer-row{display:block}.section-head p{margin-top:12px}
   .school-grid,.feature-grid,.feature-grid.two-col,.committee{grid-template-columns:1fr}
@@ -176,3 +210,15 @@ a{color:inherit}
 }
 
 .school-note{margin:0 0 10px;color:var(--navy);font-size:.78rem;font-weight:650}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .logo-link,.proposal-emblem,.person,.school-card{transition:none}
+  .logo-link:hover,.logo-link:focus-visible,.proposal-emblem:hover,.proposal-emblem:focus-visible,.person:hover,.school-card:hover{transform:none}
+}
+
+@media(max-width:360px){
+  .nav-links{gap:6px}
+  .nav-links a{font-size:.68rem}
+  .nav-links .button{padding:10px 8px}
+}

@@ -1,11 +1,12 @@
-# IACR Cryptology Schools
+# IACR Cryptology School
 
-Static redesign of the IACR Cryptology Schools website.
+Static redesign of the IACR Cryptology School website.
 
 ## Site
 
 - `index.html` contains the overview, upcoming schools and archive
-- `propose.html` contains the proposal guide and Schools Committee
+- `propose.html` contains the proposal guide
+- `committee.html` contains the Schools Committee, portraits and profile links
 - `schools.json` contains the school records
 - `MEDIA_SOURCES.md` records image sources and reuse status
 - `.github/workflows/pages.yml` deploys the site with GitHub Pages
@@ -38,3 +39,7 @@ The committee portraits remain remote references until reuse permission is confi
 - Committee cards use portrait, name, affiliation and role.
 - Francisco Rodríguez-Henríquez is the committee Chair.
 
+
+## Branding
+
+Use the programme name “IACR Cryptology School”. The header and footer use the official IACR logo at 100px with the Association’s full name beside it. The proposal guide uses the full circular logo at 220px or larger. Logo links point to IACR; the programme name links to the site homepage. Hover motion respects reduced-motion preferences.
