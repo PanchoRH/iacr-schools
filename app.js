@@ -2,25 +2,42 @@ const $=(s,e=document)=>e.querySelector(s);
 const escapeHtml=(s="")=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 
 function schoolCard(s, upcoming=false){
-  const hasPhoto=Boolean(s.image);
-  const media=hasPhoto
-    ? '<img loading="lazy" src="'+escapeHtml(s.image)+'" alt="'+escapeHtml(s.imageAlt||s.title)+'">'
+  const hasImage=Boolean(s.image);
+  const isWebsite=s.imageType==='website';
+  const media=hasImage
+    ? '<img loading="lazy" decoding="async" src="'+escapeHtml(s.image)+'" alt="'+escapeHtml(s.imageAlt||s.title)+'">'
     : '';
-  const credit=s.imageCredit
-    ? '<div class="photo-credit">'+escapeHtml(s.imageCredit)+(s.imageLicense?' · '+escapeHtml(s.imageLicense):'')+'</div>'
+  const source=s.imageCredit
+    ? (s.imageSource?'<a href="'+escapeHtml(s.imageSource)+'" target="_blank" rel="noopener noreferrer">'+escapeHtml(s.imageCredit)+'</a>':escapeHtml(s.imageCredit))
     : '';
+  const license=s.imageLicense
+    ? ' · '+(s.imageLicenseUrl?'<a href="'+escapeHtml(s.imageLicenseUrl)+'" target="_blank" rel="noopener noreferrer">'+escapeHtml(s.imageLicense)+'</a>':escapeHtml(s.imageLicense))
+    : '';
+  const credit=source?'<div class="photo-credit">'+source+license+'</div>':'';
   return '<article class="school-card'+(upcoming?' upcoming-card':'')+'">'+
-    '<div class="school-media '+(hasPhoto?'has-photo':'')+'">'+media+
-      '<div class="school-year">'+s.year+'</div>'+
-    '</div>'+
+    '<a class="school-media'+(hasImage?' has-image':'')+(isWebsite?' is-website':'')+'" href="'+escapeHtml(s.url)+'" target="_blank" rel="noopener noreferrer" aria-label="Visit '+escapeHtml(s.title)+' website">'+
+      '<span class="media-fallback" aria-hidden="true"><span>'+escapeHtml(s.city)+'</span><span>School website ↗</span></span>'+media+
+      (isWebsite?'<span class="website-bar" aria-hidden="true"><span class="browser-dots">● ● ●</span>School website</span>':'')+
+    '</a>'+
     '<div class="school-body">'+
-      '<div><h3>'+escapeHtml(s.title)+'</h3>'+
-      '<div class="meta">'+escapeHtml(s.dates)+' · '+escapeHtml(s.city)+', '+escapeHtml(s.country)+'</div>'+credit+'</div>'+
-      '<div class="card-actions"><a class="visit" href="'+escapeHtml(s.url)+'" target="_blank" rel="noopener noreferrer">School website ↗</a>'+
+      '<div class="school-kicker"><span class="school-year">'+escapeHtml(s.year)+'</span><span>'+escapeHtml(s.city)+', '+escapeHtml(s.country)+'</span></div>'+
+      '<h3>'+escapeHtml(s.title)+'</h3>'+
+      '<div class="meta">'+escapeHtml(s.dates)+'</div>'+
+      '<div class="card-actions"><a class="visit" href="'+escapeHtml(s.url)+'" target="_blank" rel="noopener noreferrer">Explore school <span aria-hidden="true">↗</span></a>'+
       (upcoming?'<span class="badge upcoming-badge">Upcoming</span>':'')+
-      '</div>'+
+      '</div>'+credit+
     '</div></article>';
 }
+
+// Keep the school link usable if an external photograph becomes unavailable.
+document.addEventListener('error',event=>{
+  const image=event.target;
+  if(!(image instanceof HTMLImageElement)||!image.closest('.school-media')) return;
+  const media=image.closest('.school-media');
+  media.classList.remove('has-image','is-website');
+  media.querySelector('.website-bar')?.remove();
+  image.remove();
+},true);
 
 async function init(){
   const response=await fetch('schools.json');

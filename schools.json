@@ -279,8 +279,13 @@
     "dates": "2–6 September 2024",
     "city": "Edinburgh",
     "country": "United Kingdom",
-    "url": "https://www.icms.org.uk/workshops/2024/foundations-and-applications-zero-knowledge-proofs",
-    "status": "past"
+    "url": "https://icms.ac.uk/archive/workshop/foundations-and-applications-of-zero-knowledge-proofs/",
+    "status": "past",
+    "image": "assets/images/gallery/edinburgh-2024-website.jpg",
+    "imageType": "website",
+    "imageAlt": "ICMS webpage for Foundations and Applications of Zero-Knowledge Proofs, September 2024",
+    "imageCredit": "ICMS",
+    "imageSource": "https://icms.ac.uk/archive/workshop/foundations-and-applications-of-zero-knowledge-proofs/"
   },
   {
     "year": 2024,
@@ -288,8 +293,13 @@
     "dates": "23–27 September 2024",
     "city": "Graz",
     "country": "Austria",
-    "url": "https://securityweek.at/2024/",
-    "status": "past"
+    "url": "https://securityweek.at/_archive/2024/",
+    "status": "past",
+    "imageType": "photo",
+    "imageCredit": "Graz Security Week / TU Graz",
+    "imageSource": "https://securityweek.at/_archive/2024/",
+    "image": "https://securityweek.at/_archive/2024/wp-content/uploads/2024/10/GSW-0244-1024x683.jpg",
+    "imageAlt": "Students following a lecture at Graz Security Week 2024"
   },
   {
     "year": 2025,
@@ -298,10 +308,12 @@
     "city": "Rome",
     "country": "Italy",
     "url": "https://casa.rub.de/en/spring-school-on-symmetric-cryptography",
-    "image": "https://cst.qd.sdu.edu.cn/__local/E/D4/11/5238684C7138DE9B8839C8E7D78_9A386DF2_7E518.jpg",
-    "imageAlt": "Participants at the Spring School on Symmetric Cryptography 2025 in Rome",
-    "imageCredit": "Shandong University — reuse permission to verify",
-    "status": "past"
+    "image": "assets/images/gallery/rome-2025-website.jpg",
+    "imageAlt": "Official CASA webpage for the Spring School on Symmetric Cryptography in Rome, March 2025",
+    "imageCredit": "CASA / Ruhr University Bochum",
+    "status": "past",
+    "imageType": "website",
+    "imageSource": "https://casa.rub.de/en/spring-school-on-symmetric-cryptography"
   },
   {
     "year": 2025,
@@ -309,8 +321,13 @@
     "dates": "1–5 September 2025",
     "city": "Graz",
     "country": "Austria",
-    "url": "https://securityweek.at/2025/",
-    "status": "past"
+    "url": "https://securityweek.at/_archive/2025/",
+    "status": "past",
+    "imageType": "photo",
+    "imageCredit": "Graz Security Week / TU Graz",
+    "imageSource": "https://securityweek.at/about/",
+    "image": "https://securityweek.at/wp-content/uploads/2026/05/01.09.2025-11.11-DSC02242-768x512.jpg",
+    "imageAlt": "A cryptography lecture in the aula at Graz Security Week 2025"
   },
   {
     "year": 2025,
@@ -319,7 +336,14 @@
     "city": "Islamabad",
     "country": "Pakistan",
     "url": "https://pakcrypt.org/pc25",
-    "status": "past"
+    "status": "past",
+    "image": "https://pakcrypt.org/assets/images/pcc25/iacr3.JPG",
+    "imageType": "photo",
+    "imageAlt": "Participants asking a question during the IACR Crypto Winter School at PakCrypt 2025",
+    "imageCredit": "Team PakCrypt",
+    "imageSource": "https://pakcrypt.org/pc25",
+    "imageLicense": "CC BY 4.0",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by/4.0/"
   },
   {
     "year": 2026,
@@ -328,6 +352,11 @@
     "city": "Hanoi",
     "country": "Vietnam",
     "url": "https://viasm.edu.vn/en/hdkh/IACR-VIASM-School-2026",
-    "status": "past"
+    "status": "past",
+    "image": "assets/images/gallery/hanoi-2026-website.jpg",
+    "imageType": "website",
+    "imageAlt": "Homepage of the IACR-VIASM Summer School on Cryptography 2026",
+    "imageCredit": "VIASM",
+    "imageSource": "https://viasm.edu.vn/en/hdkh/IACR-VIASM-School-2026"
   }
 ]
