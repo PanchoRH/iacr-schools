@@ -1,34 +1,29 @@
-# Media provenance
+# Media sources
 
-The redesign supports photographs for both historical schools and committee members.
+Use real school photographs when permission allows. Prefer group and lecture photographs. Use venue photographs only when no suitable event photograph is available.
+
+Do not copy an image into this repository unless its reuse rights are clear.
 
 ## Committee portraits
 
-The current prototype references images remotely rather than copying them into this repository.
+The current prototype loads portraits from academic or personal web sources.
 
 | Person | Profile | Portrait source |
 |---|---|---|
-| Eysa Lee | https://www.eysalee.com/ | Brown University DSI |
-| Julian Henry Loss | https://www.julianloss.com/ | Ruhr University Bochum |
+| Eysa Lee | https://www.eysalee.com/ | Brown University |
+| Julian Henry Loss | https://informatik.rub.de/en/julian-loss-develops-distributed-algorithms/ | Ruhr University Bochum |
 | Anna Lysyanskaya | https://cs.brown.edu/people/alysyans/ | Brown University |
-| Francisco Rodríguez-Henríquez | https://franciscorh.org/ | GitHub profile avatar for PanchoRH |
+| Francisco Rodríguez-Henríquez | https://franciscorh.org/ | GitHub profile image |
 | Mehdi Tibouchi | https://www.normalesup.org/~tibouchi/ | Personal academic homepage |
 
-Before final IACR publication, replace remote portraits with files for which IACR has explicit reuse permission.
+Before production, replace remote portraits with local files only after the rights holder permits reuse.
 
-## Historical school photographs
+## School photographs
 
-Current seeded examples:
+Current seeded example
 
-- **Warsaw IACR Summer School on Post-Quantum Cryptography 2024** — venue photo credited on the event page to Adrian Grycuk / Wikimedia Commons, CC BY-SA 3.0 PL.
-- **Spring School on Symmetric Cryptography 2025** — event photo published by Shandong University; explicit reuse permission/license still needs verification.
+- Warsaw IACR Summer School on Post-Quantum Cryptography 2024. Venue photograph credited to Adrian Grycuk / Wikimedia Commons under CC BY-SA 3.0 PL.
 
-For each additional school photograph, record:
+The Rome 2025 photograph remains a remote prototype reference. Confirm reuse permission before copying it into the repository.
 
-- source URL
-- creator / institution
-- license or permission
-- alt text
-- local filename after permission is confirmed
-
-Prefer real group, lecture, or venue photographs from the organizers. If permission is unclear, keep the neutral placeholder rather than copying the image into the repository.
+For every local image record the source URL, creator, license or permission, alt text and filename.
