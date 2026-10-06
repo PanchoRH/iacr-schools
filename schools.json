@@ -5,7 +5,8 @@
     "dates": "13–16 October 2014",
     "city": "Porto",
     "country": "Portugal",
-    "url": "https://attackschool.di.uminho.pt/"
+    "url": "https://attackschool.di.uminho.pt/",
+    "status": "past"
   },
   {
     "year": 2014,
@@ -13,7 +14,8 @@
     "dates": "19–22 December 2014",
     "city": "Chennai",
     "country": "India",
-    "url": "https://ask2014.iiitd.ac.in/"
+    "url": "https://ask2014.iiitd.ac.in/",
+    "status": "past"
   },
   {
     "year": 2015,
@@ -21,7 +23,8 @@
     "dates": "1–4 June 2015",
     "city": "College Park",
     "country": "USA",
-    "url": "https://www.easycrypt.info/trac/wiki/SchoolUMD2015"
+    "url": "https://www.easycrypt.info/trac/wiki/SchoolUMD2015",
+    "status": "past"
   },
   {
     "year": 2015,
@@ -29,7 +32,8 @@
     "dates": "10–12 August 2015",
     "city": "Sackville",
     "country": "Canada",
-    "url": "https://mta.ca/sac2015/s3.html"
+    "url": "https://mta.ca/sac2015/s3.html",
+    "status": "past"
   },
   {
     "year": 2015,
@@ -37,7 +41,8 @@
     "dates": "23–25 September 2015",
     "city": "Bordeaux",
     "country": "France",
-    "url": "https://ecc2015.math.u-bordeaux1.fr/"
+    "url": "https://ecc2015.math.u-bordeaux1.fr/",
+    "status": "past"
   },
   {
     "year": 2015,
@@ -45,7 +50,8 @@
     "dates": "18–23 October 2015",
     "city": "Sardinia",
     "country": "Italy",
-    "url": "https://www.cosic.esat.kuleuven.be/summer_school_sardinia_2015/index.html"
+    "url": "https://www.cosic.esat.kuleuven.be/summer_school_sardinia_2015/index.html",
+    "status": "past"
   },
   {
     "year": 2016,
@@ -53,7 +59,8 @@
     "dates": "29 May–2 June 2016",
     "city": "Corfu",
     "country": "Greece",
-    "url": "https://www.bitcoinschool.gr/"
+    "url": "https://www.bitcoinschool.gr/",
+    "status": "past"
   },
   {
     "year": 2016,
@@ -61,7 +68,8 @@
     "dates": "1–7 September 2016",
     "city": "İzmir",
     "country": "Turkey",
-    "url": "https://ecc2016.yasar.edu.tr/school.html"
+    "url": "https://ecc2016.yasar.edu.tr/school.html",
+    "status": "past"
   },
   {
     "year": 2016,
@@ -69,7 +77,8 @@
     "dates": "14–18 November 2016",
     "city": "Barcelona",
     "country": "Spain",
-    "url": "https://eventum.upf.edu/5484/detail/cost-iacr-school-on-randomness-in-cryptography.html"
+    "url": "https://eventum.upf.edu/5484/detail/cost-iacr-school-on-randomness-in-cryptography.html",
+    "status": "past"
   },
   {
     "year": 2016,
@@ -77,7 +86,8 @@
     "dates": "27 November–4 December 2016",
     "city": "Hanoi",
     "country": "Vietnam",
-    "url": "https://viasm.edu.vn/en/hdkh/cryptoschool2016"
+    "url": "https://viasm.edu.vn/en/hdkh/cryptoschool2016",
+    "status": "past"
   },
   {
     "year": 2017,
@@ -85,7 +95,8 @@
     "dates": "8–12 May 2017",
     "city": "Graz",
     "country": "Austria",
-    "url": "https://springschool.iaik.tugraz.at/"
+    "url": "https://springschool.iaik.tugraz.at/",
+    "status": "past"
   },
   {
     "year": 2017,
@@ -93,7 +104,8 @@
     "dates": "17–19 September 2017",
     "city": "La Habana",
     "country": "Cuba",
-    "url": "https://latincrypt2017.cs.cinvestav.mx/content/ascrypto-2017"
+    "url": "https://latincrypt2017.cs.cinvestav.mx/content/ascrypto-2017",
+    "status": "past"
   },
   {
     "year": 2018,
@@ -101,7 +113,8 @@
     "dates": "4–8 January 2018",
     "city": "Bangalore",
     "country": "India",
-    "url": "https://www.csa.iisc.ac.in/~crysp/IACRSchool/"
+    "url": "https://www.csa.iisc.ac.in/~crysp/IACRSchool/",
+    "status": "past"
   },
   {
     "year": 2018,
@@ -109,7 +122,8 @@
     "dates": "29 July–3 August 2018",
     "city": "Bertinoro",
     "country": "Italy",
-    "url": "https://spotniq.wordpress.com/"
+    "url": "https://spotniq.wordpress.com/",
+    "status": "past"
   },
   {
     "year": 2018,
@@ -117,7 +131,8 @@
     "dates": "30 July–3 August 2018",
     "city": "Buenos Aires",
     "country": "Argentina",
-    "url": "https://www.dc.uba.ar/eci/2018/crypto/"
+    "url": "https://www.dc.uba.ar/eci/2018/crypto/",
+    "status": "past"
   },
   {
     "year": 2018,
@@ -125,7 +140,8 @@
     "dates": "29 November–1 December 2018",
     "city": "Shenzhen",
     "country": "China",
-    "url": "https://crypto.sjtu.edu.cn/cis2018/"
+    "url": "https://crypto.sjtu.edu.cn/cis2018/",
+    "status": "past"
   },
   {
     "year": 2019,
@@ -133,7 +149,8 @@
     "dates": "15–19 July 2019",
     "city": "Kaliningrad",
     "country": "Russia",
-    "url": "https://summerschool-kld.com/"
+    "url": "https://summerschool-kld.com/",
+    "status": "past"
   },
   {
     "year": 2019,
@@ -141,7 +158,8 @@
     "dates": "13–15 December 2019",
     "city": "Shanghai",
     "country": "China",
-    "url": "https://crypto.sjtu.edu.cn/cis2019/"
+    "url": "https://crypto.sjtu.edu.cn/cis2019/",
+    "status": "past"
   },
   {
     "year": 2020,
@@ -149,7 +167,8 @@
     "dates": "18–22 May 2020",
     "city": "Copenhagen",
     "country": "Denmark",
-    "url": "https://events.au.dk/mpcschool2020/"
+    "url": "https://events.au.dk/mpcschool2020/",
+    "status": "past"
   },
   {
     "year": 2022,
@@ -157,7 +176,8 @@
     "dates": "25–29 April 2022",
     "city": "Valletta",
     "country": "Malta",
-    "url": "https://www.crossing.tu-darmstadt.de/news_events/schools/2022_school/index.en.jsp"
+    "url": "https://www.crossing.tu-darmstadt.de/news_events/schools/2022_school/index.en.jsp",
+    "status": "past"
   },
   {
     "year": 2022,
@@ -165,7 +185,8 @@
     "dates": "12–15 July 2022",
     "city": "Taipei",
     "country": "Taiwan",
-    "url": "https://troll.iis.sinica.edu.tw/school22/"
+    "url": "https://troll.iis.sinica.edu.tw/school22/",
+    "status": "past"
   },
   {
     "year": 2022,
@@ -173,7 +194,8 @@
     "dates": "1–5 August 2022",
     "city": "Budapest",
     "country": "Hungary",
-    "url": "https://pqcsummerschool2022.inf.elte.hu/"
+    "url": "https://pqcsummerschool2022.inf.elte.hu/",
+    "status": "past"
   },
   {
     "year": 2022,
@@ -181,7 +203,8 @@
     "dates": "1–4 August 2022",
     "city": "Copenhagen",
     "country": "Denmark",
-    "url": "https://www.conferencemanager.dk/ppml2022/"
+    "url": "https://www.conferencemanager.dk/ppml2022/",
+    "status": "past"
   },
   {
     "year": 2022,
@@ -189,7 +212,8 @@
     "dates": "24–30 August 2022",
     "city": "Hanoi",
     "country": "Vietnam",
-    "url": "https://viasm.edu.vn/en/hdkh/iacr-viasm-summer-school-cryptography-2022"
+    "url": "https://viasm.edu.vn/en/hdkh/iacr-viasm-summer-school-cryptography-2022",
+    "status": "past"
   },
   {
     "year": 2022,
@@ -197,7 +221,8 @@
     "dates": "26–30 September 2022",
     "city": "Graz",
     "country": "Austria",
-    "url": "https://securityweek.at/2022/"
+    "url": "https://securityweek.at/2022/",
+    "status": "past"
   },
   {
     "year": 2023,
@@ -205,7 +230,8 @@
     "dates": "30 January–3 February 2023",
     "city": "Bangkok",
     "country": "Thailand",
-    "url": "https://sites.google.com/view/iacrschoolbkk2023"
+    "url": "https://sites.google.com/view/iacrschoolbkk2023",
+    "status": "past"
   },
   {
     "year": 2023,
@@ -213,7 +239,8 @@
     "dates": "31 July–3 August 2023",
     "city": "Warsaw",
     "country": "Poland",
-    "url": "https://ideas-ncbr.pl/en/events/ppml23/"
+    "url": "https://ideas-ncbr.pl/en/events/ppml23/",
+    "status": "past"
   },
   {
     "year": 2023,
@@ -221,7 +248,8 @@
     "dates": "4–8 September 2023",
     "city": "Graz",
     "country": "Austria",
-    "url": "https://securityweek.at/2023/"
+    "url": "https://securityweek.at/2023/",
+    "status": "past"
   },
   {
     "year": 2023,
@@ -229,7 +257,8 @@
     "dates": "2–3 October 2023",
     "city": "Sangolquí",
     "country": "Ecuador",
-    "url": "https://ascrypto.org/"
+    "url": "https://ascrypto.org/",
+    "status": "past"
   },
   {
     "year": 2024,
@@ -241,7 +270,8 @@
     "image": "https://ideas-ncbr.pl/wp-content/uploads/2024/05/image-1024x679.png",
     "imageAlt": "Old Library building at the University of Warsaw, venue of the 2024 IACR Summer School on Post-Quantum Cryptography",
     "imageCredit": "Adrian Grycuk / Wikimedia Commons",
-    "imageLicense": "CC BY-SA 3.0 PL"
+    "imageLicense": "CC BY-SA 3.0 PL",
+    "status": "past"
   },
   {
     "year": 2024,
@@ -249,7 +279,8 @@
     "dates": "2–6 September 2024",
     "city": "Edinburgh",
     "country": "United Kingdom",
-    "url": "https://www.icms.org.uk/workshops/2024/foundations-and-applications-zero-knowledge-proofs"
+    "url": "https://www.icms.org.uk/workshops/2024/foundations-and-applications-zero-knowledge-proofs",
+    "status": "past"
   },
   {
     "year": 2024,
@@ -257,7 +288,8 @@
     "dates": "23–27 September 2024",
     "city": "Graz",
     "country": "Austria",
-    "url": "https://securityweek.at/2024/"
+    "url": "https://securityweek.at/2024/",
+    "status": "past"
   },
   {
     "year": 2025,
@@ -268,7 +300,8 @@
     "url": "https://casa.rub.de/en/spring-school-on-symmetric-cryptography",
     "image": "https://cst.qd.sdu.edu.cn/__local/E/D4/11/5238684C7138DE9B8839C8E7D78_9A386DF2_7E518.jpg",
     "imageAlt": "Participants at the Spring School on Symmetric Cryptography 2025 in Rome",
-    "imageCredit": "Shandong University — reuse permission to verify"
+    "imageCredit": "Shandong University — reuse permission to verify",
+    "status": "past"
   },
   {
     "year": 2025,
@@ -276,6 +309,34 @@
     "dates": "1–5 September 2025",
     "city": "Graz",
     "country": "Austria",
-    "url": "https://securityweek.at/2025/"
+    "url": "https://securityweek.at/2025/",
+    "status": "past"
+  },
+  {
+    "year": 2025,
+    "title": "IACR Crypto Winter School",
+    "dates": "24–27 November 2025",
+    "city": "Islamabad",
+    "country": "Pakistan",
+    "url": "https://pakcrypt.org/pc25",
+    "status": "past"
+  },
+  {
+    "year": 2026,
+    "title": "IACR-VIASM Summer School on Cryptography 2026",
+    "dates": "22–28 August 2026",
+    "city": "Hanoi",
+    "country": "Vietnam",
+    "url": "https://viasm.edu.vn/en/hdkh/IACR-VIASM-School-2026",
+    "status": "past"
+  },
+  {
+    "year": 2026,
+    "title": "IACR Winter School on Lightweight Cryptography 2026",
+    "dates": "24–27 November 2026",
+    "city": "Islamabad",
+    "country": "Pakistan",
+    "url": "https://pakcrypt.org/pc26",
+    "status": "upcoming"
   }
 ]
