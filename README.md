@@ -25,3 +25,16 @@ Francisco's committee card links to https://franciscorh.org/.
 Use event photographs before venue photographs when possible. Store an image in the repository only when its reuse rights are clear. Keep the source, creator, license and alt text with the record.
 
 The committee portraits remain remote references until reuse permission is confirmed.
+
+## Editorial style
+
+- Keep copy short and conservative.
+- Prefer active voice.
+- Avoid promotional or dramatic language.
+- Keep explanatory text minimal.
+- Give upcoming schools their own section.
+- Prefer real group or lecture photos over venue images.
+- Publish local image files only when reuse permission is clear.
+- Committee cards use portrait, name, affiliation and role.
+- Francisco Rodríguez-Henríquez is the committee Chair.
+
