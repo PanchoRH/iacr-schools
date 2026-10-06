@@ -171,3 +171,5 @@ a{color:inherit}
   .form-grid.two{grid-template-columns:1fr}
   .form-card{padding:20px}
 }
+
+.school-note{margin:0 0 10px;color:var(--navy);font-size:.78rem;font-weight:650}

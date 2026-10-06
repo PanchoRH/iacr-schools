@@ -5,8 +5,16 @@
     "dates": "13–16 October 2014",
     "city": "Porto",
     "country": "Portugal",
-    "url": "https://attackschool.di.uminho.pt/",
-    "status": "past"
+    "url": "https://www.iacr.org/schools/#:~:text=School%20on%20Cryptographic%20Attacks",
+    "status": "past",
+    "originalUrl": "https://attackschool.di.uminho.pt/",
+    "imageSource": "https://www.iacr.org/schools/#:~:text=School%20on%20Cryptographic%20Attacks",
+    "imageCredit": "IACR",
+    "image": "assets/images/gallery/porto-2014-27-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "IACR archive",
+    "imageAlt": "IACR archive preview for School on Cryptographic Attacks, 2014",
+    "linkLabel": "View archive"
   },
   {
     "year": 2014,
@@ -15,7 +23,13 @@
     "city": "Chennai",
     "country": "India",
     "url": "https://ask2014.iiitd.ac.in/",
-    "status": "past"
+    "status": "past",
+    "imageSource": "https://ask2014.iiitd.ac.in/",
+    "imageCredit": "ASK 2014 organizers",
+    "image": "assets/images/gallery/chennai-2014-28-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "School website",
+    "imageAlt": "School website preview for The Fourth Asian Workshop on Symmetric Key Cryptography – Cryptology School (ASK 2014), 2014"
   },
   {
     "year": 2015,
@@ -23,8 +37,16 @@
     "dates": "1–4 June 2015",
     "city": "College Park",
     "country": "USA",
-    "url": "https://www.easycrypt.info/trac/wiki/SchoolUMD2015",
-    "status": "past"
+    "url": "https://www.iacr.org/schools/#:~:text=School%20on%20Computer-aided%20Cryptography",
+    "status": "past",
+    "originalUrl": "https://www.easycrypt.info/trac/wiki/SchoolUMD2015",
+    "imageSource": "https://www.iacr.org/schools/#:~:text=School%20on%20Computer-aided%20Cryptography",
+    "imageCredit": "IACR",
+    "image": "assets/images/gallery/college-park-2015-24-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "IACR archive",
+    "imageAlt": "IACR archive preview for School on Computer-aided Cryptography, 2015",
+    "linkLabel": "View archive"
   },
   {
     "year": 2015,
@@ -32,8 +54,15 @@
     "dates": "10–12 August 2015",
     "city": "Sackville",
     "country": "Canada",
-    "url": "https://mta.ca/sac2015/s3.html",
-    "status": "past"
+    "url": "https://sacworkshop.org/SAC15/s3.html",
+    "status": "past",
+    "originalUrl": "https://mta.ca/sac2015/s3.html",
+    "imageSource": "https://sacworkshop.org/SAC15/s3.html",
+    "imageCredit": "SAC 2015 organizers",
+    "image": "assets/images/gallery/sackville-2015-23-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "School website",
+    "imageAlt": "School website preview for SAC Summer School (S3), 2015"
   },
   {
     "year": 2015,
@@ -41,8 +70,16 @@
     "dates": "23–25 September 2015",
     "city": "Bordeaux",
     "country": "France",
-    "url": "https://ecc2015.math.u-bordeaux1.fr/",
-    "status": "past"
+    "url": "https://www.iacr.org/schools/#:~:text=Summer%20school%20of%20the%2019th%20Workshop%20on%20Elliptic%20Curve%20Cryptography%20(ECC%202015)",
+    "status": "past",
+    "originalUrl": "https://ecc2015.math.u-bordeaux1.fr/",
+    "imageSource": "https://www.iacr.org/schools/#:~:text=Summer%20school%20of%20the%2019th%20Workshop%20on%20Elliptic%20Curve%20Cryptography%20(ECC%202015)",
+    "imageCredit": "IACR",
+    "image": "assets/images/gallery/bordeaux-2015-26-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "IACR archive",
+    "imageAlt": "IACR archive preview for Summer school of the 19th Workshop on Elliptic Curve Cryptography (ECC 2015), 2015",
+    "linkLabel": "View archive"
   },
   {
     "year": 2015,
@@ -50,8 +87,16 @@
     "dates": "18–23 October 2015",
     "city": "Sardinia",
     "country": "Italy",
-    "url": "https://www.cosic.esat.kuleuven.be/summer_school_sardinia_2015/index.html",
-    "status": "past"
+    "url": "https://bristolcrypto.blogspot.com/2015/10/sardinia-ecrypt-school-october-2015.html?m=0",
+    "status": "past",
+    "originalUrl": "https://www.cosic.esat.kuleuven.be/summer_school_sardinia_2015/index.html",
+    "imageSource": "https://bristolcrypto.blogspot.com/2015/10/sardinia-ecrypt-school-october-2015.html?m=0",
+    "imageCredit": "Bristol Cryptography Blog",
+    "image": "assets/images/gallery/sardinia-2015-25-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "Event report",
+    "imageAlt": "Event report preview for School on Design and Security of Cryptographic Algorithms and Devices, 2015",
+    "linkLabel": "Read school report"
   },
   {
     "year": 2016,
@@ -59,8 +104,16 @@
     "dates": "29 May–2 June 2016",
     "city": "Corfu",
     "country": "Greece",
-    "url": "https://www.bitcoinschool.gr/",
-    "status": "past"
+    "url": "https://www.illc.uva.nl/NewsandEvents/Events/Conferences/newsitem/7237/30-May---2-June-2016-Summer-School-on-Blockchain-Technologies-From-Cryptographic-E-cash-to-Modern-Cryptocurrencies-Corfu-Greece",
+    "status": "past",
+    "originalUrl": "https://www.bitcoinschool.gr/",
+    "imageSource": "https://www.illc.uva.nl/NewsandEvents/Events/Conferences/newsitem/7237/30-May---2-June-2016-Summer-School-on-Blockchain-Technologies-From-Cryptographic-E-cash-to-Modern-Cryptocurrencies-Corfu-Greece",
+    "imageCredit": "University of Amsterdam / ILLC",
+    "image": "assets/images/gallery/corfu-2016-19-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "Event archive",
+    "imageAlt": "Event archive preview for Blockchain Technologies: from cryptographic e-cash to modern cryptocurrency, 2016",
+    "linkLabel": "View archive"
   },
   {
     "year": 2016,
@@ -68,8 +121,16 @@
     "dates": "1–7 September 2016",
     "city": "İzmir",
     "country": "Turkey",
-    "url": "https://ecc2016.yasar.edu.tr/school.html",
-    "status": "past"
+    "url": "https://ce.yasar.edu.tr/en/2016/10/the-20th-workshop-on-elliptic-curve-cryptography-ecc-2016-took-place-on-september-5-7-2016-at-yasar-university-in-izmir-turkey/",
+    "status": "past",
+    "originalUrl": "https://ecc2016.yasar.edu.tr/school.html",
+    "imageSource": "https://ce.yasar.edu.tr/en/2016/10/the-20th-workshop-on-elliptic-curve-cryptography-ecc-2016-took-place-on-september-5-7-2016-at-yasar-university-in-izmir-turkey/",
+    "imageCredit": "Yaşar University",
+    "image": "assets/images/gallery/izmir-2016-21-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "Event archive",
+    "imageAlt": "Event archive preview for ECC2016 Computational Algebraic Number Theory School, 2016",
+    "linkLabel": "View archive"
   },
   {
     "year": 2016,
@@ -78,7 +139,13 @@
     "city": "Barcelona",
     "country": "Spain",
     "url": "https://eventum.upf.edu/5484/detail/cost-iacr-school-on-randomness-in-cryptography.html",
-    "status": "past"
+    "status": "past",
+    "imageSource": "https://eventum.upf.edu/5484/detail/cost-iacr-school-on-randomness-in-cryptography.html",
+    "imageCredit": "Pompeu Fabra University",
+    "image": "assets/images/gallery/barcelona-2016-20-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "School website",
+    "imageAlt": "School website preview for COST-IACR School on Randomness in Cryptography, 2016"
   },
   {
     "year": 2016,
@@ -87,7 +154,13 @@
     "city": "Hanoi",
     "country": "Vietnam",
     "url": "https://viasm.edu.vn/en/hdkh/cryptoschool2016",
-    "status": "past"
+    "status": "past",
+    "imageSource": "https://viasm.edu.vn/en/hdkh/cryptoschool2016",
+    "imageCredit": "VIASM",
+    "image": "assets/images/gallery/hanoi-2016-22-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "School website",
+    "imageAlt": "School website preview for IACR-SEAMS School “Cryptography: Foundations and New Directions”, 2016"
   },
   {
     "year": 2017,
@@ -95,8 +168,16 @@
     "dates": "8–12 May 2017",
     "city": "Graz",
     "country": "Austria",
-    "url": "https://springschool.iaik.tugraz.at/",
-    "status": "past"
+    "url": "https://www.tugraz.at/projekte/dependable-things/news/",
+    "status": "past",
+    "originalUrl": "https://springschool.iaik.tugraz.at/",
+    "imageSource": "https://www.tugraz.at/projekte/dependable-things/news/",
+    "imageCredit": "TU Graz / Dependable Things",
+    "image": "assets/images/gallery/graz-2017-18-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "Event archive",
+    "imageAlt": "Event archive preview for IACR Cryptology School on Security & Correctness in the Internet of Things, 2017",
+    "linkLabel": "View archive"
   },
   {
     "year": 2017,
@@ -104,8 +185,16 @@
     "dates": "17–19 September 2017",
     "city": "La Habana",
     "country": "Cuba",
-    "url": "https://latincrypt2017.cs.cinvestav.mx/content/ascrypto-2017",
-    "status": "past"
+    "url": "https://www.iacr.org/schools/#:~:text=Advanced%20School%20on%20Cryptology%20and%20%20Information%20Security%20in%20Latin%20America%20(ASCrypto%202017)",
+    "status": "past",
+    "originalUrl": "https://latincrypt2017.cs.cinvestav.mx/content/ascrypto-2017",
+    "imageSource": "https://www.iacr.org/schools/#:~:text=Advanced%20School%20on%20Cryptology%20and%20%20Information%20Security%20in%20Latin%20America%20(ASCrypto%202017)",
+    "imageCredit": "IACR",
+    "image": "assets/images/gallery/la-habana-2017-17-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "IACR archive",
+    "imageAlt": "IACR archive preview for Advanced School on Cryptology and Information Security in Latin America (ASCrypto 2017), 2017",
+    "linkLabel": "View archive"
   },
   {
     "year": 2018,
@@ -114,7 +203,12 @@
     "city": "Bangalore",
     "country": "India",
     "url": "https://www.csa.iisc.ac.in/~crysp/IACRSchool/",
-    "status": "past"
+    "status": "past",
+    "imageSource": "https://www.csa.iisc.ac.in/~crysp/IACRSchool/",
+    "imageCredit": "IISc / CrySP",
+    "image": "https://www.csa.iisc.ac.in/~crysp/IACRSchool/img/slider/1.jpeg",
+    "imageAlt": "The Indian Institute of Science campus, host of the 2018 IISc-IACR School on Information-theoretic Cryptography",
+    "imageType": "venue"
   },
   {
     "year": 2018,
@@ -123,7 +217,12 @@
     "city": "Bertinoro",
     "country": "Italy",
     "url": "https://spotniq.wordpress.com/",
-    "status": "past"
+    "status": "past",
+    "imageSource": "https://spotniq.wordpress.com/",
+    "imageCredit": "SPOTNIQ organizers",
+    "image": "https://spotniq.wordpress.com/wp-content/uploads/2018/08/img_0576.jpg?w=900",
+    "imageAlt": "Group photograph at the 2018 Summer School on Symmetric Cryptography in Bertinoro",
+    "imageType": "photo"
   },
   {
     "year": 2018,
@@ -131,8 +230,16 @@
     "dates": "30 July–3 August 2018",
     "city": "Buenos Aires",
     "country": "Argentina",
-    "url": "https://www.dc.uba.ar/eci/2018/crypto/",
-    "status": "past"
+    "url": "https://www.iacr.org/schools/#:~:text=ECI-IACR%20School%20on%20Modern%20Cryptography%20(ECI-IACR%20'18)",
+    "status": "past",
+    "originalUrl": "https://www.dc.uba.ar/eci/2018/crypto/",
+    "imageSource": "https://www.iacr.org/schools/#:~:text=ECI-IACR%20School%20on%20Modern%20Cryptography%20(ECI-IACR%20'18)",
+    "imageCredit": "IACR",
+    "image": "assets/images/gallery/buenos-aires-2018-13-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "IACR archive",
+    "imageAlt": "IACR archive preview for ECI-IACR School on Modern Cryptography (ECI-IACR ’18), 2018",
+    "linkLabel": "View archive"
   },
   {
     "year": 2018,
@@ -140,8 +247,16 @@
     "dates": "29 November–1 December 2018",
     "city": "Shenzhen",
     "country": "China",
-    "url": "https://crypto.sjtu.edu.cn/cis2018/",
-    "status": "past"
+    "url": "https://www.iacr.org/schools/#:~:text=The%201st%20Crypto%20Innovation%20School%20%20(CIS%202018)",
+    "status": "past",
+    "originalUrl": "https://crypto.sjtu.edu.cn/cis2018/",
+    "imageSource": "https://www.iacr.org/schools/#:~:text=The%201st%20Crypto%20Innovation%20School%20%20(CIS%202018)",
+    "imageCredit": "IACR",
+    "image": "assets/images/gallery/shenzhen-2018-16-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "IACR archive",
+    "imageAlt": "IACR archive preview for The 1st Crypto Innovation School (CIS 2018), 2018",
+    "linkLabel": "View archive"
   },
   {
     "year": 2019,
@@ -149,8 +264,15 @@
     "dates": "15–19 July 2019",
     "city": "Kaliningrad",
     "country": "Russia",
-    "url": "https://summerschool-kld.com/",
-    "status": "past"
+    "url": "https://crypto-kantiana.com/events/summerschool-kld-2019/index_en.html",
+    "status": "past",
+    "originalUrl": "https://summerschool-kld.com/",
+    "imageSource": "https://crypto-kantiana.com/events/summerschool-kld-2019/index_en.html",
+    "imageCredit": "I. Kant Baltic Federal University",
+    "image": "assets/images/gallery/kaliningrad-2019-11-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "School website",
+    "imageAlt": "School website preview for Euclidean lattices: theory and applications, 2019"
   },
   {
     "year": 2019,
@@ -158,8 +280,16 @@
     "dates": "13–15 December 2019",
     "city": "Shanghai",
     "country": "China",
-    "url": "https://crypto.sjtu.edu.cn/cis2019/",
-    "status": "past"
+    "url": "https://www.iacr.org/schools/#:~:text=The%202nd%20Crypto%20Innovation%20School%20(CIS%202019)",
+    "status": "past",
+    "originalUrl": "https://crypto.sjtu.edu.cn/cis2019/",
+    "imageSource": "https://www.iacr.org/schools/#:~:text=The%202nd%20Crypto%20Innovation%20School%20(CIS%202019)",
+    "imageCredit": "IACR",
+    "image": "assets/images/gallery/shanghai-2019-12-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "IACR archive",
+    "imageAlt": "IACR archive preview for The 2nd Crypto Innovation School (CIS 2019), 2019",
+    "linkLabel": "View archive"
   },
   {
     "year": 2020,
@@ -167,8 +297,17 @@
     "dates": "18–22 May 2020",
     "city": "Copenhagen",
     "country": "Denmark",
-    "url": "https://events.au.dk/mpcschool2020/",
-    "status": "past"
+    "url": "https://www.multipartycomputation.com/tpmpc-2020",
+    "status": "past",
+    "originalUrl": "https://events.au.dk/mpcschool2020/",
+    "imageSource": "https://www.multipartycomputation.com/tpmpc-2020",
+    "imageCredit": "TPMPC organizers",
+    "image": "assets/images/gallery/copenhagen-2020-10-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "Event archive",
+    "imageAlt": "Event archive preview for Summer School on Theory and Practice of Multi-Party Computation, 2020",
+    "linkLabel": "View archive",
+    "note": "Postponed due to COVID-19"
   },
   {
     "year": 2022,
@@ -177,7 +316,13 @@
     "city": "Valletta",
     "country": "Malta",
     "url": "https://www.crossing.tu-darmstadt.de/news_events/schools/2022_school/index.en.jsp",
-    "status": "past"
+    "status": "past",
+    "imageSource": "https://www.crossing.tu-darmstadt.de/news_events/schools/2022_school/index.en.jsp",
+    "imageCredit": "CROSSING / TU Darmstadt",
+    "image": "assets/images/gallery/valletta-2022-06-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "School website",
+    "imageAlt": "School website preview for IACR-CROSSING School on Combinatorial Techniques in Cryptography, 2022"
   },
   {
     "year": 2022,
@@ -186,7 +331,13 @@
     "city": "Taipei",
     "country": "Taiwan",
     "url": "https://troll.iis.sinica.edu.tw/school22/",
-    "status": "past"
+    "status": "past",
+    "imageSource": "https://troll.iis.sinica.edu.tw/school22/",
+    "imageCredit": "Academia Sinica",
+    "image": "assets/images/gallery/taipei-2022-04-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "School website",
+    "imageAlt": "School website preview for Academia Sinica/CCoE/IACR Post-Quantum Cryptography Mini-School (PQC Mini-School 2022), 2022"
   },
   {
     "year": 2022,
@@ -194,8 +345,16 @@
     "dates": "1–5 August 2022",
     "city": "Budapest",
     "country": "Hungary",
-    "url": "https://pqcsummerschool2022.inf.elte.hu/",
-    "status": "past"
+    "url": "https://inf.elte.hu/summer-school-in-post-quantum-cryptography",
+    "status": "past",
+    "originalUrl": "https://pqcsummerschool2022.inf.elte.hu/",
+    "imageSource": "https://inf.elte.hu/summer-school-in-post-quantum-cryptography",
+    "imageCredit": "ELTE Faculty of Informatics",
+    "image": "assets/images/gallery/budapest-2022-08-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "Event archive",
+    "imageAlt": "Event archive preview for Summer School in Post-Quantum Cryptography, 2022",
+    "linkLabel": "View archive"
   },
   {
     "year": 2022,
@@ -203,8 +362,16 @@
     "dates": "1–4 August 2022",
     "city": "Copenhagen",
     "country": "Denmark",
-    "url": "https://www.conferencemanager.dk/ppml2022/",
-    "status": "past"
+    "url": "https://cs.au.dk/news-events/events/show-event/artikel/default-d8c512df12",
+    "status": "past",
+    "originalUrl": "https://www.conferencemanager.dk/ppml2022/",
+    "imageSource": "https://cs.au.dk/news-events/events/show-event/artikel/default-d8c512df12",
+    "imageCredit": "Aarhus University",
+    "image": "assets/images/gallery/copenhagen-2022-09-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "Event archive",
+    "imageAlt": "Event archive preview for Summer School on Privacy-Preserving Machine Learning, 2022",
+    "linkLabel": "View archive"
   },
   {
     "year": 2022,
@@ -212,8 +379,14 @@
     "dates": "24–30 August 2022",
     "city": "Hanoi",
     "country": "Vietnam",
-    "url": "https://viasm.edu.vn/en/hdkh/iacr-viasm-summer-school-cryptography-2022",
-    "status": "past"
+    "url": "https://viasm.edu.vn/en/hdkh/IACR-VIASM-School-2022",
+    "status": "past",
+    "originalUrl": "https://viasm.edu.vn/en/hdkh/iacr-viasm-summer-school-cryptography-2022",
+    "imageSource": "https://viasm.edu.vn/en/scientific-activities/news-and-events/detail/crypto-2022",
+    "imageCredit": "VIASM",
+    "image": "https://viasm.edu.vn/Cms_Data/Contents/Viasm-EN/Media/crypto2022/Khaimac/image4.jpg",
+    "imageAlt": "Lecturers and students in the auditorium at the IACR-VIASM Summer School 2022",
+    "imageType": "photo"
   },
   {
     "year": 2022,
@@ -221,8 +394,15 @@
     "dates": "26–30 September 2022",
     "city": "Graz",
     "country": "Austria",
-    "url": "https://securityweek.at/2022/",
-    "status": "past"
+    "url": "https://securityweek.at/_archive/2022/",
+    "status": "past",
+    "originalUrl": "https://securityweek.at/2022/",
+    "imageSource": "https://securityweek.at/_archive/2022/",
+    "imageCredit": "Graz Security Week / TU Graz",
+    "image": "assets/images/gallery/graz-2022-05-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "School website",
+    "imageAlt": "School website preview for Graz Security Week 2022 – Summer School on Security, Privacy and Correctness, 2022"
   },
   {
     "year": 2023,
@@ -231,7 +411,13 @@
     "city": "Bangkok",
     "country": "Thailand",
     "url": "https://sites.google.com/view/iacrschoolbkk2023",
-    "status": "past"
+    "status": "past",
+    "imageSource": "https://sites.google.com/view/iacrschoolbkk2023",
+    "imageCredit": "Chulalongkorn University",
+    "image": "assets/images/gallery/bangkok-2023-02-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "School website",
+    "imageAlt": "School website preview for School on Applied Cryptography, 2023"
   },
   {
     "year": 2023,
@@ -239,8 +425,16 @@
     "dates": "31 July–3 August 2023",
     "city": "Warsaw",
     "country": "Poland",
-    "url": "https://ideas-ncbr.pl/en/events/ppml23/",
-    "status": "past"
+    "url": "https://ideas-ncbr.pl/en/2nd-iacr-privacy-preserving-machine-learning-ppml-2/",
+    "status": "past",
+    "originalUrl": "https://ideas-ncbr.pl/en/events/ppml23/",
+    "imageSource": "https://ideas-ncbr.pl/en/2nd-iacr-privacy-preserving-machine-learning-ppml-2/",
+    "imageCredit": "IDEAS NCBR",
+    "image": "assets/images/gallery/warsaw-2023-03-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "Event archive",
+    "imageAlt": "Event archive preview for The Second IACR School on Privacy-Preserving Machine Learning 2023 (PPML’23), 2023",
+    "linkLabel": "View archive"
   },
   {
     "year": 2023,
@@ -248,8 +442,14 @@
     "dates": "4–8 September 2023",
     "city": "Graz",
     "country": "Austria",
-    "url": "https://securityweek.at/2023/",
-    "status": "past"
+    "url": "https://securityweek.at/_archive/2023/",
+    "status": "past",
+    "originalUrl": "https://securityweek.at/2023/",
+    "imageSource": "https://securityweek.at/_archive/2023/",
+    "imageCredit": "Graz Security Week / TU Graz",
+    "image": "https://securityweek.at/_archive/2023/wp-content/uploads/2023/10/IMG_2345-scaled-700x300.jpg",
+    "imageAlt": "A lecturer speaking at Graz Security Week 2023",
+    "imageType": "photo"
   },
   {
     "year": 2023,
@@ -257,8 +457,15 @@
     "dates": "2–3 October 2023",
     "city": "Sangolquí",
     "country": "Ecuador",
-    "url": "https://ascrypto.org/",
-    "status": "past"
+    "url": "https://ascrypto.org/2023/",
+    "status": "past",
+    "originalUrl": "https://ascrypto.org/",
+    "imageSource": "https://ascrypto.org/2023/",
+    "imageCredit": "ASCrypto organizers",
+    "image": "assets/images/gallery/sangolqui-2023-00-website.jpg",
+    "imageType": "website",
+    "mediaLabel": "School website",
+    "imageAlt": "School website preview for Advanced School on Cryptology and Information Security in Latin America 2023 (ASCrypto), 2023"
   },
   {
     "year": 2024,

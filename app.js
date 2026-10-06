@@ -4,6 +4,8 @@ const escapeHtml=(s="")=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;
 function schoolCard(s, upcoming=false){
   const hasImage=Boolean(s.image);
   const isWebsite=s.imageType==='website';
+  const mediaLabel=s.mediaLabel||'School website';
+  const linkLabel=s.linkLabel||'Explore school';
   const media=hasImage
     ? '<img loading="lazy" decoding="async" src="'+escapeHtml(s.image)+'" alt="'+escapeHtml(s.imageAlt||s.title)+'">'
     : '';
@@ -15,15 +17,16 @@ function schoolCard(s, upcoming=false){
     : '';
   const credit=source?'<div class="photo-credit">'+source+license+'</div>':'';
   return '<article class="school-card'+(upcoming?' upcoming-card':'')+'">'+
-    '<a class="school-media'+(hasImage?' has-image':'')+(isWebsite?' is-website':'')+'" href="'+escapeHtml(s.url)+'" target="_blank" rel="noopener noreferrer" aria-label="Visit '+escapeHtml(s.title)+' website">'+
-      '<span class="media-fallback" aria-hidden="true"><span>'+escapeHtml(s.city)+'</span><span>School website ↗</span></span>'+media+
-      (isWebsite?'<span class="website-bar" aria-hidden="true"><span class="browser-dots">● ● ●</span>School website</span>':'')+
+    '<a class="school-media'+(hasImage?' has-image':'')+(isWebsite?' is-website':'')+'" href="'+escapeHtml(s.url)+'" target="_blank" rel="noopener noreferrer" aria-label="'+escapeHtml(linkLabel+': '+s.title)+'">'+
+      '<span class="media-fallback" aria-hidden="true"><span>'+escapeHtml(s.city)+'</span><span>'+escapeHtml(linkLabel)+' ↗</span></span>'+media+
+      (isWebsite?'<span class="website-bar" aria-hidden="true"><span class="browser-dots">● ● ●</span>'+escapeHtml(mediaLabel)+'</span>':'')+
     '</a>'+
     '<div class="school-body">'+
       '<div class="school-kicker"><span class="school-year">'+escapeHtml(s.year)+'</span><span>'+escapeHtml(s.city)+', '+escapeHtml(s.country)+'</span></div>'+
       '<h3>'+escapeHtml(s.title)+'</h3>'+
       '<div class="meta">'+escapeHtml(s.dates)+'</div>'+
-      '<div class="card-actions"><a class="visit" href="'+escapeHtml(s.url)+'" target="_blank" rel="noopener noreferrer">Explore school <span aria-hidden="true">↗</span></a>'+
+      (s.note?'<p class="school-note">'+escapeHtml(s.note)+'</p>':'')+
+      '<div class="card-actions"><a class="visit" href="'+escapeHtml(s.url)+'" target="_blank" rel="noopener noreferrer">'+escapeHtml(linkLabel)+' <span aria-hidden="true">↗</span></a>'+
       (upcoming?'<span class="badge upcoming-badge">Upcoming</span>':'')+
       '</div>'+credit+
     '</div></article>';
