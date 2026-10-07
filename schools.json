@@ -15,7 +15,7 @@
     "mediaLabel": "IACR archive",
     "imageAlt": "IACR archive preview for School on Cryptographic Attacks, 2014",
     "linkLabel": "View archive",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2014,
@@ -31,7 +31,7 @@
     "imageType": "website",
     "mediaLabel": "School website",
     "imageAlt": "School website preview for The Fourth Asian Workshop on Symmetric Key Cryptography – Cryptology School (ASK 2014), 2014",
-    "continent": "Asia"
+    "region": "Asia"
   },
   {
     "year": 2015,
@@ -49,7 +49,7 @@
     "mediaLabel": "IACR archive",
     "imageAlt": "IACR archive preview for School on Computer-aided Cryptography, 2015",
     "linkLabel": "View archive",
-    "continent": "North America"
+    "region": "US & Canada"
   },
   {
     "year": 2015,
@@ -66,7 +66,7 @@
     "imageType": "website",
     "mediaLabel": "School website",
     "imageAlt": "School website preview for SAC Summer School (S3), 2015",
-    "continent": "North America"
+    "region": "US & Canada"
   },
   {
     "year": 2015,
@@ -84,7 +84,7 @@
     "mediaLabel": "IACR archive",
     "imageAlt": "IACR archive preview for Summer school of the 19th Workshop on Elliptic Curve Cryptography (ECC 2015), 2015",
     "linkLabel": "View archive",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2015,
@@ -102,7 +102,7 @@
     "mediaLabel": "Event report",
     "imageAlt": "Event report preview for School on Design and Security of Cryptographic Algorithms and Devices, 2015",
     "linkLabel": "Read school report",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2016,
@@ -120,7 +120,7 @@
     "mediaLabel": "Event archive",
     "imageAlt": "Event archive preview for Blockchain Technologies: from cryptographic e-cash to modern cryptocurrency, 2016",
     "linkLabel": "View archive",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2016,
@@ -138,7 +138,7 @@
     "mediaLabel": "Event archive",
     "imageAlt": "Event archive preview for ECC2016 Computational Algebraic Number Theory School, 2016",
     "linkLabel": "View archive",
-    "continent": "Asia"
+    "region": "Asia"
   },
   {
     "year": 2016,
@@ -154,7 +154,7 @@
     "imageType": "website",
     "mediaLabel": "School website",
     "imageAlt": "School website preview for COST-IACR School on Randomness in Cryptography, 2016",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2016,
@@ -170,7 +170,7 @@
     "imageType": "website",
     "mediaLabel": "School website",
     "imageAlt": "School website preview for IACR-SEAMS School “Cryptography: Foundations and New Directions”, 2016",
-    "continent": "Asia"
+    "region": "Asia"
   },
   {
     "year": 2017,
@@ -188,7 +188,7 @@
     "mediaLabel": "Event archive",
     "imageAlt": "Event archive preview for IACR Cryptology School on Security & Correctness in the Internet of Things, 2017",
     "linkLabel": "View archive",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2017,
@@ -206,7 +206,7 @@
     "mediaLabel": "IACR archive",
     "imageAlt": "IACR archive preview for Advanced School on Cryptology and Information Security in Latin America (ASCrypto 2017), 2017",
     "linkLabel": "View archive",
-    "continent": "North America"
+    "region": "Latin America"
   },
   {
     "year": 2018,
@@ -221,7 +221,7 @@
     "image": "https://www.csa.iisc.ac.in/~crysp/IACRSchool/img/slider/1.jpeg",
     "imageAlt": "The Indian Institute of Science campus, host of the 2018 IISc-IACR School on Information-theoretic Cryptography",
     "imageType": "venue",
-    "continent": "Asia"
+    "region": "Asia"
   },
   {
     "year": 2018,
@@ -236,7 +236,7 @@
     "image": "https://spotniq.wordpress.com/wp-content/uploads/2018/08/img_0576.jpg?w=900",
     "imageAlt": "Group photograph at the 2018 Summer School on Symmetric Cryptography in Bertinoro",
     "imageType": "photo",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2018,
@@ -254,7 +254,7 @@
     "mediaLabel": "IACR archive",
     "imageAlt": "IACR archive preview for ECI-IACR School on Modern Cryptography (ECI-IACR ’18), 2018",
     "linkLabel": "View archive",
-    "continent": "South America"
+    "region": "Latin America"
   },
   {
     "year": 2018,
@@ -272,7 +272,7 @@
     "mediaLabel": "IACR archive",
     "imageAlt": "IACR archive preview for The 1st Crypto Innovation School (CIS 2018), 2018",
     "linkLabel": "View archive",
-    "continent": "Asia"
+    "region": "Asia"
   },
   {
     "year": 2019,
@@ -289,7 +289,7 @@
     "imageType": "website",
     "mediaLabel": "School website",
     "imageAlt": "School website preview for Euclidean lattices: theory and applications, 2019",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2019,
@@ -307,7 +307,7 @@
     "mediaLabel": "IACR archive",
     "imageAlt": "IACR archive preview for The 2nd Crypto Innovation School (CIS 2019), 2019",
     "linkLabel": "View archive",
-    "continent": "Asia"
+    "region": "Asia"
   },
   {
     "year": 2020,
@@ -326,7 +326,7 @@
     "imageAlt": "Event archive preview for Summer School on Theory and Practice of Multi-Party Computation, 2020",
     "linkLabel": "View archive",
     "note": "Postponed due to COVID-19",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2022,
@@ -342,7 +342,7 @@
     "imageType": "website",
     "mediaLabel": "School website",
     "imageAlt": "School website preview for IACR-CROSSING School on Combinatorial Techniques in Cryptography, 2022",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2022,
@@ -358,7 +358,7 @@
     "imageType": "website",
     "mediaLabel": "School website",
     "imageAlt": "School website preview for Academia Sinica/CCoE/IACR Post-Quantum Cryptography Mini-School (PQC Mini-School 2022), 2022",
-    "continent": "Asia"
+    "region": "Asia"
   },
   {
     "year": 2022,
@@ -376,7 +376,7 @@
     "mediaLabel": "Event archive",
     "imageAlt": "Event archive preview for Summer School in Post-Quantum Cryptography, 2022",
     "linkLabel": "View archive",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2022,
@@ -394,7 +394,7 @@
     "mediaLabel": "Event archive",
     "imageAlt": "Event archive preview for Summer School on Privacy-Preserving Machine Learning, 2022",
     "linkLabel": "View archive",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2022,
@@ -410,7 +410,7 @@
     "image": "https://viasm.edu.vn/Cms_Data/Contents/Viasm-EN/Media/crypto2022/Khaimac/image4.jpg",
     "imageAlt": "Lecturers and students in the auditorium at the IACR-VIASM Summer School 2022",
     "imageType": "photo",
-    "continent": "Asia"
+    "region": "Asia"
   },
   {
     "year": 2022,
@@ -427,7 +427,7 @@
     "imageType": "website",
     "mediaLabel": "School website",
     "imageAlt": "School website preview for Graz Security Week 2022 – Summer School on Security, Privacy and Correctness, 2022",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2023,
@@ -443,7 +443,7 @@
     "imageType": "website",
     "mediaLabel": "School website",
     "imageAlt": "School website preview for School on Applied Cryptography, 2023",
-    "continent": "Asia"
+    "region": "Asia"
   },
   {
     "year": 2023,
@@ -461,7 +461,7 @@
     "mediaLabel": "Event archive",
     "imageAlt": "Event archive preview for The Second IACR School on Privacy-Preserving Machine Learning 2023 (PPML’23), 2023",
     "linkLabel": "View archive",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2023,
@@ -477,7 +477,7 @@
     "image": "https://securityweek.at/_archive/2023/wp-content/uploads/2023/10/IMG_2345-scaled-700x300.jpg",
     "imageAlt": "A lecturer speaking at Graz Security Week 2023",
     "imageType": "photo",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2023,
@@ -494,7 +494,7 @@
     "imageType": "website",
     "mediaLabel": "School website",
     "imageAlt": "School website preview for Advanced School on Cryptology and Information Security in Latin America 2023 (ASCrypto), 2023",
-    "continent": "South America"
+    "region": "Latin America"
   },
   {
     "year": 2024,
@@ -508,7 +508,7 @@
     "imageCredit": "Adrian Grycuk / Wikimedia Commons",
     "imageLicense": "CC BY-SA 3.0 PL",
     "status": "past",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2024,
@@ -523,7 +523,7 @@
     "imageAlt": "ICMS webpage for Foundations and Applications of Zero-Knowledge Proofs, September 2024",
     "imageCredit": "ICMS",
     "imageSource": "https://icms.ac.uk/archive/workshop/foundations-and-applications-of-zero-knowledge-proofs/",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2024,
@@ -538,7 +538,7 @@
     "imageSource": "https://securityweek.at/_archive/2024/",
     "image": "https://securityweek.at/_archive/2024/wp-content/uploads/2024/10/GSW-0244-1024x683.jpg",
     "imageAlt": "Students following a lecture at Graz Security Week 2024",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2025,
@@ -553,7 +553,7 @@
     "status": "past",
     "imageType": "website",
     "imageSource": "https://casa.rub.de/en/spring-school-on-symmetric-cryptography",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2025,
@@ -568,7 +568,7 @@
     "imageSource": "https://securityweek.at/about/",
     "image": "https://securityweek.at/wp-content/uploads/2026/05/01.09.2025-11.11-DSC02242-768x512.jpg",
     "imageAlt": "A cryptography lecture in the aula at Graz Security Week 2025",
-    "continent": "Europe"
+    "region": "Europe"
   },
   {
     "year": 2025,
@@ -585,7 +585,7 @@
     "imageSource": "https://pakcrypt.org/pc25",
     "imageLicense": "CC BY 4.0",
     "imageLicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-    "continent": "Asia"
+    "region": "Asia"
   },
   {
     "year": 2026,
@@ -600,7 +600,7 @@
     "imageAlt": "Homepage of the IACR-VIASM Summer School on Cryptography 2026",
     "imageCredit": "VIASM",
     "imageSource": "https://viasm.edu.vn/en/hdkh/IACR-VIASM-School-2026",
-    "continent": "Asia"
+    "region": "Asia"
   },
   {
     "year": 2026,
@@ -608,7 +608,6 @@
     "dates": "2–5 February 2026",
     "city": "Turin",
     "country": "Italy",
-    "continent": "Europe",
     "url": "https://ai4i.it/ias-winter-school-2026/",
     "image": "assets/images/gallery/turin-2026-website.png",
     "imageType": "website",
@@ -616,7 +615,8 @@
     "imageCredit": "AI4I",
     "status": "past",
     "imageSource": "https://ai4i.it/ias-winter-school-2026/",
-    "listingSource": "https://www.iacr.org/schools/"
+    "listingSource": "https://www.iacr.org/schools/",
+    "region": "Europe"
   },
   {
     "year": 2026,
@@ -624,7 +624,6 @@
     "dates": "2–13 March 2026",
     "city": "Santa Fe",
     "country": "Argentina",
-    "continent": "South America",
     "url": "https://sites.google.com/view/agmiit-2026/home",
     "image": "assets/images/gallery/santa-fe-2026-website.png",
     "imageType": "website",
@@ -632,7 +631,8 @@
     "imageCredit": "AGMIIT 2026 organizers",
     "status": "past",
     "imageSource": "https://sites.google.com/view/agmiit-2026/home",
-    "listingSource": "https://www.iacr.org/schools/"
+    "listingSource": "https://www.iacr.org/schools/",
+    "region": "Latin America"
   },
   {
     "year": 2026,
@@ -640,7 +640,6 @@
     "dates": "16–18 March 2026",
     "city": "Singapore",
     "country": "Singapore",
-    "continent": "Asia",
     "url": "https://informatik.rub.de/symcrypt/springschool2026/",
     "image": "assets/images/gallery/singapore-2026-website.png",
     "imageType": "website",
@@ -648,7 +647,8 @@
     "imageCredit": "Ruhr University Bochum",
     "status": "past",
     "imageSource": "https://informatik.rub.de/symcrypt/springschool2026/",
-    "listingSource": "https://www.iacr.org/schools/"
+    "listingSource": "https://www.iacr.org/schools/",
+    "region": "Asia"
   },
   {
     "year": 2026,
@@ -656,7 +656,6 @@
     "dates": "6–7 July 2026",
     "city": "Hammamet",
     "country": "Tunisia",
-    "continent": "Africa",
     "url": "https://www.mims-institut.org/events/details/267",
     "originalUrl": "https://www.africacrypt2026.tn/summer-school/",
     "image": "assets/images/gallery/hammamet-2026-website.png",
@@ -667,7 +666,8 @@
     "linkLabel": "View school record",
     "status": "past",
     "imageSource": "https://www.mims-institut.org/events/details/267",
-    "listingSource": "https://www.iacr.org/schools/"
+    "listingSource": "https://www.iacr.org/schools/",
+    "region": "Africa"
   },
   {
     "year": 2026,
@@ -675,7 +675,6 @@
     "dates": "27 July–7 August 2026",
     "city": "Santiago",
     "country": "Chile",
-    "continent": "South America",
     "url": "https://santiago2026.gaati.org/presentation/en/",
     "image": "assets/images/gallery/santiago-2026-website.png",
     "imageType": "website",
@@ -683,6 +682,7 @@
     "imageCredit": "Santiago 2026 CIMPA School organizers",
     "status": "past",
     "imageSource": "https://santiago2026.gaati.org/presentation/en/",
-    "listingSource": "https://www.iacr.org/schools/"
+    "listingSource": "https://www.iacr.org/schools/",
+    "region": "Latin America"
   }
 ]

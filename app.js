@@ -55,7 +55,7 @@ window.addEventListener('hashchange',updateSectionNavigation);
 updateSectionNavigation();
 
 async function init(){
-  const response=await fetch('schools.json?v=20261007-schools2026');
+  const response=await fetch('schools.json?v=20261007-regions');
   const schools=await response.json();
   schools.sort((a,b)=>b.year-a.year||a.title.localeCompare(b.title));
 
@@ -70,15 +70,15 @@ async function init(){
   }
 
   const grid=$('#schoolGrid'), search=$('#search'), year=$('#yearFilter');
-  const continent=$('#continentFilter'), country=$('#countryFilter');
+  const region=$('#regionFilter'), country=$('#countryFilter');
   const years=[...new Set(past.map(s=>s.year))].sort((a,b)=>b-a);
-  const continents=[...new Set(past.map(s=>s.continent).filter(Boolean))].sort();
+  const regions=[...new Set(past.map(s=>s.region).filter(Boolean))].sort();
   year.innerHTML+=years.map(y=>'<option value="'+y+'">'+y+'</option>').join('');
-  continent.innerHTML+=continents.map(c=>'<option value="'+escapeHtml(c)+'">'+escapeHtml(c)+'</option>').join('');
+  region.innerHTML+=regions.map(c=>'<option value="'+escapeHtml(c)+'">'+escapeHtml(c)+'</option>').join('');
 
   const updateCountries=()=>{
     const selected=country.value;
-    const countries=[...new Set(past.filter(s=>!continent.value||s.continent===continent.value).map(s=>s.country))].sort();
+    const countries=[...new Set(past.filter(s=>!region.value||s.region===region.value).map(s=>s.country))].sort();
     country.innerHTML='<option value="">All countries</option>'+countries.map(c=>'<option value="'+escapeHtml(c)+'">'+escapeHtml(c)+'</option>').join('');
     country.value=countries.includes(selected)?selected:'';
   };
@@ -86,16 +86,16 @@ async function init(){
   const render=()=>{
     const q=search.value.trim().toLowerCase();
     const rows=past.filter(s=>
-      (!q||(`${s.title} ${s.city} ${s.country} ${s.continent||''} ${s.year}`).toLowerCase().includes(q))&&
+      (!q||(`${s.title} ${s.city} ${s.country} ${s.region||''} ${s.year}`).toLowerCase().includes(q))&&
       (!year.value||String(s.year)===year.value)&&
-      (!continent.value||s.continent===continent.value)&&
+      (!region.value||s.region===region.value)&&
       (!country.value||s.country===country.value));
     grid.innerHTML=rows.length?rows.map(s=>schoolCard(s,false)).join(''):'<p class="quiet">No schools match these filters.</p>';
     $('#resultCount').textContent=rows.length+' school'+(rows.length===1?'':'s');
   };
 
   [search,year,country].forEach(el=>el.addEventListener('input',render));
-  continent.addEventListener('input',()=>{updateCountries();render();});
+  region.addEventListener('input',()=>{updateCountries();render();});
   updateCountries();
   render();
 }

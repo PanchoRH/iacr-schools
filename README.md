@@ -51,7 +51,9 @@ Applicants email their proposal PDF and supporting documents directly to `school
 
 ## Archive and navigation
 
-Each school in `schools.json` has a `continent` based on its location. For schools in transcontinental countries, use the host city (for example, Kaliningrad is in Europe and İzmir is in Asia). The archive combines continent, country, year and text filters; the country choices follow the selected continent. Only continents represented in the archive appear in the menu.
+Each school in `schools.json` has a `region` based on its location. The “Continents/Regions” filter uses Africa, Asia, Europe, Latin America, Oceania, and US & Canada. Group Mexico, Central America, South America and the Caribbean together under Latin America; Cuba belongs in this group. Reserve US & Canada for those two countries. Use Oceania for Australia, New Zealand and the Pacific islands. For transcontinental countries, use the host city (for example, Kaliningrad is in Europe and İzmir is in Asia).
+
+The archive combines region, country, year and text filters; the country choices follow the selected region. Only regions represented in the archive appear in the menu, so Oceania will appear when a school there is added. Region labels are escaped when rendered, including the ampersand in US & Canada.
 
 The header uses `aria-current` for the current page or selected homepage section. All pages include a committee contact address and a link to the official policy. The proposal guide identifies the official policy as the source of the format and evaluation requirements.
 

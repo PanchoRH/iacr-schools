@@ -94,7 +94,7 @@ a{color:inherit}
 .visit{color:var(--blue);font-weight:800;text-decoration:none}
 .badge{padding:5px 8px;border-radius:999px;background:#eaf3f2;color:var(--teal);font-size:.72rem;font-weight:800}
 .upcoming-badge{background:#e7eef6;color:var(--navy)}
-.toolbar{display:grid;grid-template-columns:minmax(0,1fr) 130px 180px 190px;gap:11px;margin:24px 0 12px}
+.toolbar{display:grid;grid-template-columns:minmax(0,1fr) 130px 220px 190px;gap:11px;margin:24px 0 12px}
 .input,.select{min-width:0;width:100%;border:1px solid var(--line);border-radius:13px;background:#fff;color:var(--ink);padding:12px 14px;font:inherit}
 .quiet{grid-column:1/-1;color:var(--muted)}
 .callout{display:grid;grid-template-columns:1fr auto;align-items:center;gap:28px;padding:36px;border-radius:26px;background:var(--navy);color:#fff}
@@ -160,7 +160,7 @@ a{color:inherit}
   .featured-grid{grid-template-columns:minmax(0,1fr)}
   .proposal-layout{grid-template-columns:1fr}
   .sidebar-card{position:static}
-  .toolbar{grid-template-columns:repeat(3,minmax(0,1fr))}.toolbar .input{grid-column:1/-1}
+  .toolbar{grid-template-columns:130px minmax(205px,1fr) minmax(0,1fr)}.toolbar .input{grid-column:1/-1}
   .callout{grid-template-columns:1fr}
 }
 @media(max-width:640px){
