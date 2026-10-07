@@ -54,3 +54,10 @@ Applicants email their proposal PDF and supporting documents directly to `school
 Each school in `schools.json` has a `continent` based on its location. For schools in transcontinental countries, use the host city (for example, Kaliningrad is in Europe and İzmir is in Asia). The archive combines continent, country, year and text filters; the country choices follow the selected continent. Only continents represented in the archive appear in the menu.
 
 The header uses `aria-current` for the current page or selected homepage section. All pages include a committee contact address and a link to the official policy. The proposal guide identifies the official policy as the source of the format and evaluation requirements.
+
+
+### School-list completeness
+
+On 7 October 2026 the archive was checked against the supported-school list at https://www.iacr.org/schools/. It contains 41 distinct records, including all six 2026 schools in Argentina, Chile, Italy, Singapore, Tunisia and Vietnam. The official page repeats the 2022 Valletta school; the archive includes it once. Schools in the separate “Non-IACR schools held in cooperation with IACR” section are not part of this supported-school archive.
+
+When refreshing the archive, compare the complete supported-school list, including the latest year, rather than checking only records already in `schools.json`. Keep a record even when its original website is unavailable, using a surviving institutional or IACR archive link.

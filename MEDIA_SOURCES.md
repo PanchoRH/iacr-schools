@@ -122,3 +122,20 @@ The MPC Summer School 2020 card retains its historical scheduled dates and adds 
 - `assets/images/iacr-logo.png`: unchanged 500×500 PNG from https://www.iacr.org/img/logo/iacrlogo_small.png, used in the header and footer at 100×100px with the full Association name beside it.
 - `assets/images/iacr-logo-full.png`: unchanged 500×500 transparent PNG from https://www.iacr.org/img/logo/iacrlogo_trans.png, used on the near-white proposal hero at 220×220px or larger.
 - Added at the site owner’s request for the IACR programme website; no open license is asserted. Both versions link to https://www.iacr.org/ and have alt text “IACR logo”.
+
+
+## Missing 2026 schools restored — 7 October 2026
+
+The official IACR supported-school list at https://www.iacr.org/schools/ lists six schools for 2026. Five omitted entries were restored: Turin, Santa Fe, Singapore, Hammamet and Santiago. Hanoi was already present. Titles, dates and locations were checked against that list and surviving school or institutional event pages. All six are past events as of this update.
+
+The AGMIIT 2026 homepage includes a group photograph, but the external image failed to load when embedded in the gallery. The Santa Fe card uses a capture of the official school homepage instead.
+
+Five website previews were captured from rendered pages at 1280 × 720. Italy’s cookie banner was dismissed before capture. No website content was changed. Captures continue the site owner's requested school-photo-or-webpage gallery approach; no open license to underlying content is inferred.
+
+| File under `assets/images/gallery/` | Source / owner | Notes |
+|---|---|---|
+| `turin-2026-website.png` | https://ai4i.it/ias-winter-school-2026/ — AI4I | School title, dates and venue. |
+| `singapore-2026-website.png` | https://informatik.rub.de/symcrypt/springschool2026/ — Ruhr University Bochum | School homepage; the original city-photo credit to tawatchai07 / freepik.com remains visible. |
+| `hammamet-2026-website.png` | https://www.mims-institut.org/events/details/267 — Mediterranean Institute for the Mathematical Sciences | The original AfricaCrypt school domain did not resolve during this check. The card links to the surviving institutional event record and retains the original URL in its data. |
+| `santiago-2026-website.png` | https://santiago2026.gaati.org/presentation/en/ — Santiago 2026 CIMPA School organizers | School homepage with title and dates. |
+| `santa-fe-2026-website.png` | https://sites.google.com/view/agmiit-2026/home — AGMIIT 2026 organizers | Official homepage with school title, dates and location. |

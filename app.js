@@ -55,7 +55,7 @@ window.addEventListener('hashchange',updateSectionNavigation);
 updateSectionNavigation();
 
 async function init(){
-  const response=await fetch('schools.json?v=20261007-review');
+  const response=await fetch('schools.json?v=20261007-schools2026');
   const schools=await response.json();
   schools.sort((a,b)=>b.year-a.year||a.title.localeCompare(b.title));
 
