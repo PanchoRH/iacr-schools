@@ -30,10 +30,11 @@ a{color:inherit}
 .brand-mark{width:38px;height:38px;display:grid;place-items:center;border-radius:11px;background:var(--navy);color:#fff;font-weight:900}
 .brand-logo{width:100px;height:100px;display:block;object-fit:contain}
 .nav-links{display:flex;align-items:center;gap:22px}
-.nav-links a{text-decoration:none;color:var(--muted);font-weight:700}
-.nav-links a:hover{color:var(--ink)}
-.nav-links .committee-link{color:var(--navy)}
-.nav-links a[aria-current="page"]{text-decoration:underline;text-underline-offset:7px;text-decoration-thickness:2px}
+.nav-links a{text-decoration:none;color:var(--ink);font-weight:700}
+.nav-links a:hover{color:var(--blue)}
+.nav-links a[aria-current]{color:var(--blue);text-decoration:underline;text-underline-offset:7px;text-decoration-thickness:2px}
+.nav-links .button[aria-current]{color:#fff}
+.nav-links .button:hover{background:var(--navy-2);color:#fff}
 .nav-links a:focus-visible,.person:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
 .button{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:11px 17px;text-decoration:none;font-weight:800;border:1px solid transparent}
 .button.primary{background:var(--navy);color:#fff}
@@ -93,8 +94,8 @@ a{color:inherit}
 .visit{color:var(--blue);font-weight:800;text-decoration:none}
 .badge{padding:5px 8px;border-radius:999px;background:#eaf3f2;color:var(--teal);font-size:.72rem;font-weight:800}
 .upcoming-badge{background:#e7eef6;color:var(--navy)}
-.toolbar{display:grid;grid-template-columns:1fr 185px 205px;gap:11px;margin:24px 0 12px}
-.input,.select{width:100%;border:1px solid var(--line);border-radius:13px;background:#fff;color:var(--ink);padding:12px 14px;font:inherit}
+.toolbar{display:grid;grid-template-columns:minmax(0,1fr) 130px 180px 190px;gap:11px;margin:24px 0 12px}
+.input,.select{min-width:0;width:100%;border:1px solid var(--line);border-radius:13px;background:#fff;color:var(--ink);padding:12px 14px;font:inherit}
 .quiet{grid-column:1/-1;color:var(--muted)}
 .callout{display:grid;grid-template-columns:1fr auto;align-items:center;gap:28px;padding:36px;border-radius:26px;background:var(--navy);color:#fff}
 .callout h2{font-size:clamp(1.8rem,3.5vw,2.8rem)}
@@ -136,11 +137,19 @@ a{color:inherit}
 .footer{padding:38px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
 .footer-row{display:flex;align-items:center;justify-content:space-between;gap:28px}
 .small-link{color:var(--blue);font-weight:750}
+.footer-contact{max-width:350px}
+.footer-contact h2{margin:0;font-size:1rem;color:var(--ink)}
+.footer-contact p{margin:6px 0}
+.footer-links{display:grid;gap:10px}
+.policy-notice{margin-top:24px;padding:20px 22px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:0 16px 16px 0}
+.policy-notice>a{color:var(--navy);font-size:1.1rem;font-weight:800;text-underline-offset:3px}
+.hero .policy-notice p{margin:10px 0 0;font-size:1rem;line-height:1.55}
 @media(max-width:1000px){
   .hero-grid{grid-template-columns:1fr}
   .committee{grid-template-columns:repeat(3,1fr)}
 }
 @media(max-width:900px){
+  .footer-row{flex-wrap:wrap}
   .nav{min-height:132px;flex-wrap:wrap;gap:14px;padding-block:14px}
   #archive,#upcoming,#committee{scroll-margin-top:195px}
   .proposal-hero-grid{grid-template-columns:minmax(0,1fr) 230px;gap:32px}
@@ -151,7 +160,7 @@ a{color:inherit}
   .featured-grid{grid-template-columns:minmax(0,1fr)}
   .proposal-layout{grid-template-columns:1fr}
   .sidebar-card{position:static}
-  .toolbar{grid-template-columns:1fr 1fr}.toolbar .input{grid-column:1/-1}
+  .toolbar{grid-template-columns:repeat(3,minmax(0,1fr))}.toolbar .input{grid-column:1/-1}
   .callout{grid-template-columns:1fr}
 }
 @media(max-width:640px){
@@ -164,7 +173,7 @@ a{color:inherit}
   .proposal-hero-grid{grid-template-columns:1fr;gap:28px}
   .proposal-hero-grid h1{font-size:clamp(2.6rem,10vw,3.45rem)}
   .proposal-emblem{justify-self:center;padding:12px 0}
-  .footer-row .small-link{display:inline-block;margin-top:24px}
+  .footer-contact,.footer-links{margin-top:24px}
   .nav-links{gap:8px}
   .nav-links a{font-size:.76rem}
   .nav-links .button{padding:10px 12px}

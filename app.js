@@ -42,8 +42,20 @@ document.addEventListener('error',event=>{
   image.remove();
 },true);
 
+function updateSectionNavigation(){
+  document.querySelectorAll('.nav-links a[href^="index.html#"]').forEach(link=>{
+    if(new URL(link.href).hash===window.location.hash){
+      link.setAttribute('aria-current','location');
+    }else{
+      link.removeAttribute('aria-current');
+    }
+  });
+}
+window.addEventListener('hashchange',updateSectionNavigation);
+updateSectionNavigation();
+
 async function init(){
-  const response=await fetch('schools.json');
+  const response=await fetch('schools.json?v=20261007-review');
   const schools=await response.json();
   schools.sort((a,b)=>b.year-a.year||a.title.localeCompare(b.title));
 
@@ -57,23 +69,34 @@ async function init(){
       : '<p class="quiet">No upcoming schools are listed.</p>';
   }
 
-  const grid=$('#schoolGrid'), search=$('#search'), year=$('#yearFilter'), country=$('#countryFilter');
+  const grid=$('#schoolGrid'), search=$('#search'), year=$('#yearFilter');
+  const continent=$('#continentFilter'), country=$('#countryFilter');
   const years=[...new Set(past.map(s=>s.year))].sort((a,b)=>b-a);
-  const countries=[...new Set(past.map(s=>s.country))].sort();
-  year.innerHTML+=[...years].map(y=>'<option value="'+y+'">'+y+'</option>').join('');
-  country.innerHTML+=countries.map(c=>'<option value="'+escapeHtml(c)+'">'+escapeHtml(c)+'</option>').join('');
+  const continents=[...new Set(past.map(s=>s.continent).filter(Boolean))].sort();
+  year.innerHTML+=years.map(y=>'<option value="'+y+'">'+y+'</option>').join('');
+  continent.innerHTML+=continents.map(c=>'<option value="'+escapeHtml(c)+'">'+escapeHtml(c)+'</option>').join('');
+
+  const updateCountries=()=>{
+    const selected=country.value;
+    const countries=[...new Set(past.filter(s=>!continent.value||s.continent===continent.value).map(s=>s.country))].sort();
+    country.innerHTML='<option value="">All countries</option>'+countries.map(c=>'<option value="'+escapeHtml(c)+'">'+escapeHtml(c)+'</option>').join('');
+    country.value=countries.includes(selected)?selected:'';
+  };
 
   const render=()=>{
     const q=search.value.trim().toLowerCase();
     const rows=past.filter(s=>
-      (!q||(`${s.title} ${s.city} ${s.country} ${s.year}`).toLowerCase().includes(q))&&
+      (!q||(`${s.title} ${s.city} ${s.country} ${s.continent||''} ${s.year}`).toLowerCase().includes(q))&&
       (!year.value||String(s.year)===year.value)&&
+      (!continent.value||s.continent===continent.value)&&
       (!country.value||s.country===country.value));
     grid.innerHTML=rows.length?rows.map(s=>schoolCard(s,false)).join(''):'<p class="quiet">No schools match these filters.</p>';
     $('#resultCount').textContent=rows.length+' school'+(rows.length===1?'':'s');
   };
 
   [search,year,country].forEach(el=>el.addEventListener('input',render));
+  continent.addEventListener('input',()=>{updateCountries();render();});
+  updateCountries();
   render();
 }
 init();

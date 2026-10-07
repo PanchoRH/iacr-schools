@@ -48,3 +48,9 @@ Use the programme name “IACR Cryptology School”. The header and footer use t
 ## Proposal submission
 
 Applicants email their proposal PDF and supporting documents directly to `schools@iacr.org`. The proposal pages use `mailto:` links that open the applicant’s own email app with the recipient and subject filled in. Applicants attach their files and send the email themselves; the website does not upload or send documents. The address remains visible for people using webmail or without a configured email app. Large supporting files can be shared as accessible links. There is no external form-processing service or online submission confirmation.
+
+## Archive and navigation
+
+Each school in `schools.json` has a `continent` based on its location. For schools in transcontinental countries, use the host city (for example, Kaliningrad is in Europe and İzmir is in Asia). The archive combines continent, country, year and text filters; the country choices follow the selected continent. Only continents represented in the archive appear in the menu.
+
+The header uses `aria-current` for the current page or selected homepage section. All pages include a committee contact address and a link to the official policy. The proposal guide identifies the official policy as the source of the format and evaluation requirements.
