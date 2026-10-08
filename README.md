@@ -6,7 +6,7 @@ Static redesign of the IACR Cryptology School website.
 
 - `index.html` contains the overview, upcoming schools and archive
 - `propose.html` contains the proposal guide
-- `submit-proposal.html` explains how to email a proposal and supporting attachments
+- `submit-proposal.html` offers direct email and contains the optional proposal form
 - `committee.html` contains the Schools Committee, portraits and profile links
 - `schools.json` contains the school records
 - `MEDIA_SOURCES.md` records image sources and reuse status
@@ -47,7 +47,11 @@ Use the programme name “IACR Cryptology School”. The header and footer use t
 
 ## Proposal submission
 
-Applicants email their proposal PDF and supporting documents directly to `schools@iacr.org`. The proposal pages use `mailto:` links that open the applicant’s own email app with the recipient and subject filled in. Applicants attach their files and send the email themselves; the website does not upload or send documents. The address remains visible for people using webmail or without a configured email app. Large supporting files can be shared as accessible links. There is no external form-processing service or online submission confirmation.
+Direct email to `schools@iacr.org` remains the active submission route. Applicants attach their files and send the email from their own email app or webmail.
+
+An optional online form and delivery backend are implemented but **disabled pending account setup and a private delivery test**. When enabled, the form requires the proposal information and a PDF, accepts up to four supporting documents, and sends them as actual attachments through a Cloudflare Worker and Resend. No applicant account is required. Files are limited to 5 MiB each and 10 MiB together. The browser shows the form only when configured and the backend reports ready; the email route remains available.
+
+See [backend/SETUP.md](backend/SETUP.md) for configuration, privacy, delivery limitations, costs to verify and activation steps. Public settings belong in `proposal-config.js`; credentials must never be committed. `npm test` checks delivery handling offline. `npm run preview:form` starts a clearly labelled localhost preview that cannot send email. The Pages workflow publishes an explicit static-file allowlist, excluding backend code, tests and local configuration.
 
 ## Archive and navigation
 

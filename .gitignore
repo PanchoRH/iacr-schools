@@ -1,0 +1,10 @@
+node_modules/
+.wrangler/
+.dev.vars*
+.env*
+backend/wrangler.jsonc
+backend/wrangler.production.jsonc
+_site/
+coverage/
+*.log
+.DS_Store

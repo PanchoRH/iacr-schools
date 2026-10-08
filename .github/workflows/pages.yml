@@ -18,12 +18,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check proposal handling without sending email
+        run: npm test
+      - name: Prepare public files
+        run: npm run build:site
       - uses: actions/configure-pages@v5
         with:
           enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: "."
+          path: '_site'
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4

@@ -1,0 +1,38 @@
+[hidden] { display: none !important; }
+.proposal-form-wrap { max-width: 900px; }
+#online-proposal { scroll-margin-top: 150px; }
+.proposal-form input, .proposal-form textarea, #form-status { scroll-margin-top: 160px; }
+.proposal-form-intro { margin-bottom: 30px; }
+.proposal-form-intro p { color: var(--muted); max-width: 70ch; }
+.proposal-form fieldset { min-width: 0; border: 1px solid var(--line); border-radius: 20px; margin: 0 0 28px; padding: 26px; }
+.proposal-form legend { padding: 0 10px; font-size: 1.25rem; font-weight: 800; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.form-field { display: flex; flex-direction: column; gap: 7px; min-width: 0; }
+.form-field.wide { grid-column: 1 / -1; }
+.form-field label { font-weight: 700; }
+.form-field small, .form-note { color: var(--muted); font-size: .9rem; }
+.form-field input, .form-field textarea { box-sizing: border-box; width: 100%; border: 1px solid #8291a3; border-radius: 10px; padding: 12px; background: white; color: var(--ink); font: inherit; }
+.form-field textarea { min-height: 110px; resize: vertical; }
+.form-field input[type=file] { background: var(--paper); padding: 16px 12px; }
+.form-field input::file-selector-button { border: 1px solid var(--line); border-radius: 6px; background: white; padding: 7px 10px; margin-right: 10px; font: inherit; cursor: pointer; }
+.proposal-form :focus-visible, #form-status:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.form-field [aria-invalid=true] { border: 2px solid #9e2323; }
+.file-summary { margin: 6px 0 0; padding-left: 20px; overflow-wrap: anywhere; }
+.file-summary:empty { display: none; }
+.form-confirmation { display: flex; align-items: flex-start; gap: 12px; margin: 22px 0; }
+.form-confirmation input { flex: 0 0 auto; width: 20px; height: 20px; margin-top: 3px; }
+.form-status { padding: 18px; margin: 20px 0; border-radius: 12px; background: #fff5e8; border: 1px solid #b17a26; overflow-wrap: anywhere; }
+.form-status.success { background: #edf8f3; border-color: #267c78; }
+.form-submit { border: 0; font: inherit; font-weight: 800; cursor: pointer; }
+.form-submit:disabled { opacity: .65; cursor: wait; }
+.form-privacy { margin-top: 20px; font-size: .9rem; max-width: 75ch; color: var(--muted); }
+.form-privacy a { text-decoration: underline; }
+.form-honeypot { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.form-return { margin-top: 22px; }
+@media (max-width: 640px) {
+  #online-proposal { scroll-margin-top: 195px; }
+  .proposal-form input, .proposal-form textarea, #form-status { scroll-margin-top: 205px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .proposal-form fieldset { padding: 18px 14px; }
+  .form-field input, .form-field textarea { font-size: 16px; }
+}

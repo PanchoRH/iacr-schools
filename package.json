@@ -1,0 +1,19 @@
+{
+  "name": "iacr-schools",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.15"
+  },
+  "scripts": {
+    "test": "node --test backend/test/*.test.js",
+    "build:site": "node scripts/build-site.mjs",
+    "worker:dev": "wrangler dev --config backend/wrangler.jsonc",
+    "worker:check": "wrangler deploy --dry-run --config backend/wrangler.example.jsonc",
+    "worker:deploy": "wrangler deploy --config backend/wrangler.jsonc",
+    "preview:form": "node backend/test/preview.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "4.148.0"
+  }
+}

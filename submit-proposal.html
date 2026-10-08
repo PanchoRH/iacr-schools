@@ -7,6 +7,8 @@
 <title>Submit an IACR Cryptology School Proposal</title>
 <link rel="icon" type="image/png" sizes="500x500" href="favicon.png?v=20261007-iacr">
 <link rel="stylesheet" href="styles.css?v=20261007-review">
+<link rel="stylesheet" href="proposal-form.css?v=20261008">
+<script type="module" src="proposal-form.js"></script>
 </head>
 <body>
 <header class="site-header">
@@ -28,14 +30,15 @@
 <section class="hero proposal-hero">
   <div class="container proposal-hero-grid">
     <div>
-      <span class="eyebrow">Submit by email</span>
+      <span class="eyebrow" id="submission-eyebrow">Submit by email</span>
       <h1>Submit your school proposal</h1>
-      <p>Email your proposal PDF and supporting documents directly to the IACR Schools Committee at <a href="mailto:schools@iacr.org">schools@iacr.org</a>.</p>
+      <p id="submission-intro">Email your proposal PDF and supporting documents directly to the IACR Schools Committee at <a href="mailto:schools@iacr.org">schools@iacr.org</a>.</p>
       <div class="hero-actions">
-        <a class="button primary" href="mailto:schools@iacr.org?subject=IACR%20Cryptology%20School%20proposal">Email your proposal</a>
+        <a class="button primary" id="online-proposal-link" href="#online-proposal" hidden>Complete the proposal form</a>
+        <a class="button primary" id="email-proposal-link" href="mailto:schools@iacr.org?subject=IACR%20Cryptology%20School%20proposal">Email your proposal</a>
         <a class="button secondary" href="propose.html">Review proposal guide</a>
       </div>
-      <p class="email-help">The button opens your email app. Attach your files there before sending. If it does not open, write to schools@iacr.org using your usual email service.</p>
+      <p class="email-help">“Email your proposal” opens your email app. Attach your files there before sending. If it does not open, write to schools@iacr.org using your usual email service.</p>
     </div>
     <a class="proposal-emblem" href="https://www.iacr.org/" title="IACR logo">
       <img src="assets/images/iacr-logo-full.png" width="500" height="500" alt="IACR logo">
@@ -44,7 +47,70 @@
   </div>
 </section>
 
-<section class="section white">
+<section class="section white" id="online-proposal" hidden aria-labelledby="form-heading">
+  <div class="container proposal-form-wrap">
+    <div class="proposal-form-intro">
+      <span class="eyebrow">Online submission</span>
+      <h2 class="section-title" id="form-heading">Send your proposal</h2>
+      <p>The <a href="https://www.iacr.org/docs/schools.pdf" target="_blank" rel="noopener noreferrer">official IACR policy (PDF)</a> specifies the proposal format and evaluation criteria. Give short answers below and include the full details in your proposal PDF. All fields are required unless marked optional.</p>
+      <p>No account is needed. Your documents will be included as email attachments to the Schools Committee.</p>
+    </div>
+    <form id="proposal-form" class="proposal-form" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>1. Organizing team</legend>
+        <div class="form-grid">
+          <div class="form-field"><label for="organizer_name">Contact organizer</label><input id="organizer_name" name="organizer_name" autocomplete="name" required maxlength="200"></div>
+          <div class="form-field"><label for="email">Contact email</label><input type="email" id="email" name="email" autocomplete="email" required maxlength="254"></div>
+          <div class="form-field wide"><label for="organizer_affiliation">Affiliation</label><input id="organizer_affiliation" name="organizer_affiliation" autocomplete="organization" required maxlength="300"></div>
+          <div class="form-field wide"><label for="organizers">Organizing team</label><small id="organizers-help">Names, affiliations and roles of the other organizers. If you are the sole organizer, say so.</small><textarea id="organizers" name="organizers" required maxlength="3000" aria-describedby="organizers-help"></textarea></div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>2. School details</legend>
+        <div class="form-grid">
+          <div class="form-field wide"><label for="school_name">School name</label><input id="school_name" name="school_name" required maxlength="200"></div>
+          <div class="form-field wide"><label for="school_website">School website (optional)</label><input type="url" id="school_website" name="school_website" placeholder="https://" maxlength="1000"></div>
+          <div class="form-field"><label for="start_date">Start date</label><input type="date" id="start_date" name="start_date" required></div>
+          <div class="form-field"><label for="end_date">End date</label><input type="date" id="end_date" name="end_date" required></div>
+          <div class="form-field"><label for="city">City</label><input id="city" name="city" required maxlength="120"></div>
+          <div class="form-field"><label for="country">Country</label><input id="country" name="country" required maxlength="120"></div>
+          <div class="form-field"><label for="attendance">Expected attendance</label><input type="number" id="attendance" name="attendance" min="1" max="999999" step="1" required></div>
+          <div class="form-field wide"><label for="topic">Topic and relevance to cryptology</label><textarea id="topic" name="topic" required maxlength="4000"></textarea></div>
+          <div class="form-field wide"><label for="objectives">Objectives and prerequisites</label><small id="objectives-help">Who is the school for, what should participants already know, and what will they learn?</small><textarea id="objectives" name="objectives" required maxlength="4000" aria-describedby="objectives-help"></textarea></div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>3. Teaching, logistics and budget</legend>
+        <div class="form-grid">
+          <div class="form-field wide"><label for="speakers">Speakers and confirmation status</label><textarea id="speakers" name="speakers" required maxlength="4000"></textarea></div>
+          <div class="form-field wide"><label for="teaching_format">Teaching plan</label><small id="teaching-help">Outline the schedule, lecture length, sessions and teaching materials.</small><textarea id="teaching_format" name="teaching_format" required maxlength="4000" aria-describedby="teaching-help"></textarea></div>
+          <div class="form-field wide"><label for="logistics">Venue, travel and accommodation</label><small id="logistics-help">Include local transport and accessibility arrangements.</small><textarea id="logistics" name="logistics" required maxlength="4000" aria-describedby="logistics-help"></textarea></div>
+          <div class="form-field wide"><label for="iacr_support">IACR funding requested, with currency</label><input id="iacr_support" name="iacr_support" required maxlength="120" placeholder="For example, 8,000 USD"></div>
+          <div class="form-field wide"><label for="budget">Budget and other funding</label><small id="budget-help">Summarize income, expenses, other funding and responsibility for any deficit. Include the detailed budget in your documents.</small><textarea id="budget" name="budget" required maxlength="4000" aria-describedby="budget-help"></textarea></div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>4. Documents and confirmation</legend>
+        <p class="form-note" id="upload-limits">Attach one proposal PDF and up to four supporting documents. Maximum 5 MiB per file and 10 MiB altogether. For larger submissions, email <a href="mailto:schools@iacr.org">schools@iacr.org</a>.</p>
+        <div class="form-grid">
+          <div class="form-field wide"><label for="proposal_pdf">Proposal PDF</label><input type="file" id="proposal_pdf" name="proposal_pdf" accept=".pdf,application/pdf" required aria-describedby="upload-limits proposal_pdf-list"><ul class="file-summary" id="proposal_pdf-list"></ul></div>
+          <div class="form-field wide"><label for="supporting_documents">Supporting documents (optional)</label><small id="supporting-help">PDF, DOCX, XLSX, ODT, ODS, CSV or TXT. Choose all supporting files together; selecting again replaces the previous selection.</small><input type="file" id="supporting_documents" name="supporting_documents" accept=".pdf,.docx,.xlsx,.odt,.ods,.csv,.txt" multiple aria-describedby="upload-limits supporting-help supporting_documents-list"><ul class="file-summary" id="supporting_documents-list"></ul></div>
+          <div class="form-field wide"><label for="supporting_links">Additional links or notes (optional)</label><textarea id="supporting_links" name="supporting_links" maxlength="2000"></textarea></div>
+        </div>
+        <label class="form-confirmation" for="confirmation"><input type="checkbox" id="confirmation" name="confirmation" value="yes" required><span>I have read the official IACR policy, checked this proposal and its attachments, and am ready to send them to the Schools Committee.</span></label>
+        <p class="form-privacy">This form uses Cloudflare to process the upload and prevent spam, and Resend to deliver your email and attachments to schools@iacr.org. Documents are not published on this website. These providers process the submission, and the committee retains the email for review. See <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare’s privacy policy</a> and <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Resend’s privacy policy</a>. You can also submit directly by email.</p>
+      </fieldset>
+      <div class="form-honeypot" aria-hidden="true"><label for="company_website">Leave this field blank</label><input id="company_website" name="company_website" tabindex="-1" autocomplete="off"></div>
+      <div id="proposal-challenge"></div>
+      <div id="form-status" class="form-status" role="status" aria-live="polite" tabindex="-1" hidden></div>
+      <button type="submit" id="send-proposal" class="button primary form-submit">Submit proposal</button>
+      <p class="form-note">Keep this page open while your documents are sent. If an error occurs, your entries and selected files stay in the form so you can retry.</p>
+      <p id="form-return" class="form-return" hidden><a href="index.html">Return to the schools website</a></p>
+    </form>
+  </div>
+</section>
+
+<section class="section white" id="email-checklist-section">
   <div class="container">
     <span class="eyebrow">Before you send</span>
     <h2 class="section-title">What to include</h2>
