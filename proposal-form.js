@@ -146,10 +146,9 @@ async function initialize() {
     });
     section.hidden = false;
     document.querySelector('#online-proposal-link').hidden = false;
-    document.querySelector('#email-proposal-link').className = 'button secondary';
     document.querySelector('#email-checklist-section').hidden = true;
     document.querySelector('#submission-eyebrow').textContent = 'School proposals';
-    document.querySelector('#submission-intro').textContent = 'Complete the form below and attach your proposal PDF and supporting documents. You can also submit by email to schools@iacr.org.';
+    document.querySelector('#submission-intro').textContent = 'Complete the form below and attach your proposal PDF and supporting documents.';
   } catch { /* The existing direct-email route remains visible and usable. */ }
 }
 
