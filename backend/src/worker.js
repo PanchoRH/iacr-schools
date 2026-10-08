@@ -6,7 +6,7 @@ const RETRY_WINDOW_MS = 23 * 60 * 60 * 1000; // Below Resend's 24-hour deduplica
 const ACTION = 'school_proposal';
 const log = (event, reference = '') => console.log(JSON.stringify({ event, reference }));
 
-function config(env) {
+export function config(env) {
   const origins = (env.ALLOWED_ORIGINS || '').split(',').map(x => x.trim()).filter(Boolean);
   const recipient = env.PROPOSAL_RECIPIENT || '';
   const sender = env.MAIL_FROM || '';
@@ -16,7 +16,7 @@ function config(env) {
   return { origins, recipient, sender, ready: Boolean(ready) };
 }
 
-function json(body, status = 200, origin = '') {
+export function json(body, status = 200, origin = '') {
   const headers = { 'Content-Type': 'application/json', 'Cache-Control': 'no-store', 'Vary': 'Origin', 'X-Content-Type-Options': 'nosniff' };
   if (origin) headers['Access-Control-Allow-Origin'] = origin;
   return new Response(JSON.stringify(body), { status, headers });
@@ -31,6 +31,11 @@ async function boundedForm(request) {
   const reader = request.body.getReader();
   const chunks = [];
   let size = 0;
+  let timedOut = false;
+  const timeout = setTimeout(() => {
+    timedOut = true;
+    reader.cancel().catch(() => {});
+  }, 30000);
   try {
     while (true) {
       const { value, done } = await reader.read();
@@ -42,7 +47,8 @@ async function boundedForm(request) {
       }
       chunks.push(value);
     }
-  } finally { reader.releaseLock(); }
+  } finally { clearTimeout(timeout); reader.releaseLock(); }
+  if (timedOut) throw new ProposalError('The upload took too long. Please try again or submit by email.', 408);
   try { return await new Response(new Blob(chunks), { headers: { 'Content-Type': type } }).formData(); }
   catch { throw new ProposalError('The upload could not be read. Please try again.', 400); }
 }
@@ -96,7 +102,8 @@ async function prepareEmail(fields, files, id, settings) {
 
 async function sendOnce(env, payload, id, fetcher, now) {
   const reference = `SCH-${id}`;
-  const hash = await digest(JSON.stringify(payload));
+  const serialized = JSON.stringify(payload);
+  const hash = await digest(serialized);
   // An atomic INSERT limits new submissions to 20/day, including failed attempts.
   await env.DB.prepare(`INSERT OR IGNORE INTO submissions (id, payload_hash, created_at)
     SELECT ?1, ?2, ?3 WHERE (SELECT COUNT(*) FROM submissions WHERE created_at >= ?4) < 20`)
@@ -119,7 +126,7 @@ async function sendOnce(env, payload, id, fetcher, now) {
     response = await fetcher('https://api.resend.com/emails', {
       method: 'POST',
       headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'Content-Type': 'application/json', 'Idempotency-Key': `school-proposal/${id}` },
-      body: JSON.stringify(payload), signal: AbortSignal.timeout(20000),
+      body: serialized, signal: AbortSignal.timeout(20000),
     });
     result = await response.json();
   } catch {

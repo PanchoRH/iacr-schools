@@ -2,9 +2,13 @@
 
 ## Current status
 
-The form and Worker are implemented. Delivery is **off by default** in both the public configuration and the Worker configuration. The existing email route remains available. Offline tests do not contact Cloudflare, Resend or the committee.
+The public form is enabled for **schools@iacr.org**. Direct email remains available. The verified sender is `proposals@schools.franciscorh.org`; applicants' addresses are used only as Reply-To.
 
-Production activation still requires a Cloudflare account, a Resend account, a verified sender domain, and successful private delivery testing. No provider account or paid plan is created by these files.
+The existing validated Worker was promoted in place to preserve its installed secrets. Its URL retains its original internal name, `https://iacr-school-proposals-staging.panchorh.workers.dev`, but it is now the **production service**. Do not deploy private tests to it. The production D1 database is `iacr-school-proposals` (`ece39bd0-c8f5-400c-8508-e639c39fe31e`), separate from test records. The managed Turnstile widget allows only `panchorh.github.io`; the backend accepts only `https://panchorh.github.io`.
+
+Private delivery was confirmed, including all five attachments opening. No test was sent to the committee alias during activation. Alias forwarding and member inbox delivery are not yet verified.
+
+Workers Free was confirmed by Cloudflare. A direct edge upload consumed 729ms for 10MiB, exceeding its 10ms allowance. The revised edge handler streams the body to a SQLite-backed Durable Object: the 10MiB capacity test consumed 1ms at the edge and 266ms in the object, within its 30-second allowance. Capacity tests simulated Resend and did not send email. No paid subscription was enabled.
 
 ## What applicants get
 
@@ -80,14 +84,14 @@ With the owner of the private inbox present, send one synthetic proposal with a 
 2. The message contains all required form answers, no advertising, and Reply-To addresses the test organizer.
 3. Resend reports delivery. API acceptance alone is not proof of mailbox receipt.
 4. A retry with the same submission reference creates no second email. Simulate uncertain network outcomes locally first.
-5. Check the largest permitted combined upload with the Cloudflare runtime. Review CPU usage, memory and provider errors, and test through an actual university mail system if available. The free Worker's CPU limit may be insufficient for large multipart/base64 payloads. Do not buy an upgrade automatically; measure first and agree on a plan, a different host or revised limits.
+5. Check the largest permitted combined upload with the Cloudflare runtime. Review both edge and Durable Object CPU usage and provider errors. The edge must stream uploads without parsing them; multipart/base64 processing must run in the Durable Object, which has a 30-second default CPU allowance. Do not buy an upgrade automatically.
 6. Confirm that an unavailable backend leaves the direct-email route usable and never displays a false delivery confirmation.
 
 The committee should receive only one clearly announced final test after the private tests pass and the owner authorizes that check. Confirm that the alias forwards **all** attachments to members; a private inbox test cannot prove that.
 
 ## Production activation
 
-Use a separate Worker name, D1 database and Turnstile configuration for production. Repeat secret setup and migration with that configuration. Set PROPOSAL_RECIPIENT to schools@iacr.org and ALLOWED_ORIGINS to https://panchorh.github.io. Keep the frontend disabled until delivery and alias forwarding have been verified.
+For a new installation, use separate Worker names, D1 databases and Turnstile configurations for staging and production. Repeat secret setup and migration with that configuration. This installation promoted its original Worker in place as documented above; future test deployments must use a different Worker name and must not target the production database or committee recipient. Set PROPOSAL_RECIPIENT to schools@iacr.org and ALLOWED_ORIGINS to https://panchorh.github.io. Verify private delivery before public activation and clearly record whether alias forwarding has been tested. Committee test emails require explicit owner authorization.
 
 After validation, set the public `proposal-config.js` to the production Worker URL, production site key and enabled true. Change the proposal guide's “Submit by email” button text to “Submit a proposal”. Commit those public changes together. The Pages workflow checks the offline tests and publishes only the static-file allowlist.
 
@@ -96,14 +100,14 @@ The current direct-email link stays available alongside the form.
 ## Failure handling and records
 
 - D1 stores only submission IDs, hashes, timestamps, delivery state and provider message IDs. It stores no names, addresses, answers or documents.
-- Submitted files pass through Worker memory to Resend. Resend processes and may retain message content and attachments under its service policies; this is **not** a zero-retention service. The committee receives and keeps the email. The form discloses these processors before submission.
+- Submitted files are streamed through the edge Worker and processed in Durable Object memory before delivery to Resend. The Durable Object never stores files or proposal text. Only one upload is processed at a time, and reading the upload has a 30-second timeout; a concurrent applicant is asked to retry with their form entries retained. Resend processes and may retain message content and attachments under its service policies; this is **not** a zero-retention service. The committee receives and keeps the email. The form discloses these processors before submission.
 - File extension/signature checks are not antivirus scanning. Recipients should treat attachments as untrusted documents using their normal mail security tools.
 - The browser retains a reference and content hash in session storage. It does not store proposal text or documents there. Reloading requires reselecting files and filling the form again.
 - A database lease plus the provider's idempotency key protects concurrent retries and connection failures. A pending reference can be retried for up to 23 hours. After that, it requires a manual delivery check, avoiding a duplicate once Resend's 24-hour key has expired. Accepted references are never resent by this handler.
 - No background queue stores or retries files. A failed or uncertain submission asks the applicant to retry while retaining their form values. If they close the page, they must restore their answers/files or email the committee. This is deliberately visible, not a claim of guaranteed delivery.
 - Do not delete database records while unresolved submissions remain. Retain the small metadata registry to recognize old accepted references. There is no automatic purge; an owner can set a documented retention policy later.
 - Logs contain event names and references only. To investigate, look up the reference in D1 and the provider message ID in Resend. Check delivered/bounced status manually; this version does not process bounce webhooks or provide a committee dashboard.
-- The handler limits requests to 5 per minute per IP and new references to 20 per rolling day. Origin checks supplement Turnstile; they are not authentication. Cloudflare's IP limit is per location, not a globally exact counter. The D1 daily ceiling is enforced atomically.
+- The handler limits requests to 5 per minute per IP and new references to 20 per rolling day. The Durable Object processes one upload at a time to bound attachment memory use. Origin checks supplement Turnstile; they are not authentication. Cloudflare's IP limit is per location, not a globally exact counter. The D1 daily ceiling is enforced atomically.
 
 ## Rollback and maintenance
 
@@ -117,7 +121,8 @@ Keep provider accounts under an identified owner; review bounces, usage and depe
 - [Resend idempotency keys and the 24-hour window](https://resend.com/docs/dashboard/emails/idempotency-keys)
 - [Resend domain verification](https://resend.com/docs/dashboard/domains/introduction)
 - [Cloudflare Worker pricing and CPU limits](https://developers.cloudflare.com/workers/platform/pricing/)
+- [Durable Objects Free availability and CPU limits](https://developers.cloudflare.com/durable-objects/platform/limits/)
 - [Cloudflare Turnstile server verification](https://developers.cloudflare.com/turnstile/get-started/server-side-validation/)
 - [Cloudflare rate-limit binding](https://developers.cloudflare.com/workers/runtime-apis/bindings/rate-limit/)
 
-The free tiers may cover this submission volume. They do not remove the CPU, upload, deliverability or account-ownership checks above. No recurring charge has been authorized or enabled by this implementation.
+The measured design fits the free tiers at the expected submission volume. Free quotas, upload limits, deliverability and account ownership still need ongoing care. No recurring charge has been authorized or enabled by this implementation.

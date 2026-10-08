@@ -1,9 +1,11 @@
 {
   "$schema": "../node_modules/wrangler/config-schema.json",
   "name": "iacr-school-proposals-staging",
-  "main": "src/worker.js",
+  "main": "src/runtime.js",
   "compatibility_date": "2026-10-08",
-  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
   "workers_dev": true,
   "vars": {
     "DELIVERY_ENABLED": "false",
@@ -11,16 +13,41 @@
     "MAIL_FROM": "",
     "PROPOSAL_RECIPIENT": ""
   },
-  "d1_databases": [{
-    "binding": "DB",
-    "database_name": "iacr-school-proposals-staging",
-    "database_id": "00000000-0000-0000-0000-000000000000",
-    "migrations_dir": "migrations"
-  }],
-  "ratelimits": [{
-    "name": "SUBMISSION_RATE_LIMITER",
-    "namespace_id": "7260100801",
-    "simple": { "limit": 5, "period": 60 }
-  }],
-  "observability": { "enabled": true }
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "iacr-school-proposals-staging",
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "ratelimits": [
+    {
+      "name": "SUBMISSION_RATE_LIMITER",
+      "namespace_id": "7260100801",
+      "simple": {
+        "limit": 5,
+        "period": 60
+      }
+    }
+  ],
+  "observability": {
+    "enabled": true
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "PROPOSAL_DELIVERY",
+        "class_name": "ProposalDelivery"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "ProposalDelivery"
+      ]
+    }
+  ]
 }
